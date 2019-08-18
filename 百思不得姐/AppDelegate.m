@@ -16,7 +16,41 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+    //创建窗口
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    //创建根控制器
+    UITabBarController *tabBarVC = [[UITabBarController alloc]init];
+    //创建子控制器
+    UITableViewController *vc0 = [[UITableViewController alloc]init];
+    vc0.title = @"精华";
+    vc0.tabBarItem.image = [UIImage imageNamed:@"tabBar_essence_icon"];
+    vc0.tabBarItem.selectedImage = [UIImage imageNamed:@"tabBar_essence_click_icon"];
+    [tabBarVC addChildViewController:vc0];
+    
+    UIViewController *vc1 = [[UIViewController alloc]init];
+    vc1.title = @"新帖";
+    vc1.tabBarItem.image = [UIImage imageNamed:@"tabBar_new_icon"];
+    vc1.tabBarItem.selectedImage = [UIImage imageNamed:@"tabBar_new_click_icon"];
+    [tabBarVC addChildViewController:vc1];
+    
+    UITableViewController *vc3 = [[UITableViewController alloc]init];
+    vc3.title = @"关注";
+    vc3.tabBarItem.image = [UIImage imageNamed:@"tabBar_friendTrends_icon"];
+    vc3.tabBarItem.selectedImage = [UIImage imageNamed:@"tabBar_friendTrends_click_icon"];
+    [tabBarVC addChildViewController:vc3];
+    
+    UIViewController *vc4 = [[UIViewController alloc]init];
+    vc4.title = @"我";
+    vc4.tabBarItem.image = [UIImage imageNamed:@"tabBar_me_icon"];
+    vc4.tabBarItem.selectedImage = [UIImage imageNamed:@"tabBar_me_click_icon"];
+    [tabBarVC addChildViewController:vc4];
+    //设置根控制器
+    self.window.rootViewController = tabBarVC;
+    //设置主窗口
+    [self.window makeKeyAndVisible];
+    
+    
     return YES;
 }
 
