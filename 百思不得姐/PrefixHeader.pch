@@ -1,0 +1,28 @@
+//
+//  PrefixHeader.pch
+//  百思不得姐
+//
+//  Created by 孙 on 2019/8/24.
+//  Copyright © 2019 小情调. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+//在#ifdef __OBJC__ 和 #endif之间的内容，只会拷贝到OC源代码文件中，不会拷贝到其他语言的源代码文件中
+#ifdef __OBJC__
+
+//日志
+#ifdef DEBUG
+#define XMGLog(...) NSLog(__VA_ARGS__)
+#else
+#define XMGLog(...)
+#endif
+
+//颜色
+#define XMGColorA(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)/255.0]
+#define XMGColor(r,g,b) XMGColorA((r),(g),(b),255)
+#define XMGRandomColor XMGColor(arc4random_uniform(255),arc4random_uniform(255),arc4random_uniform(255))
+
+#endif
+#endif 

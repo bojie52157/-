@@ -12,6 +12,7 @@
 		A0DBFB8B23091A0100FA612E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DBFB8A23091A0100FA612E /* main.m */; };
 		A0DBFB9523091A0100FA612E /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DBFB9423091A0100FA612E /* _____Tests.m */; };
 		A0DBFBA023091A0100FA612E /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DBFB9F23091A0100FA612E /* _____UITests.m */; };
+		A0DE9B772310E5DE00CAA2E0 /* XMGTableBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DE9B762310E5DE00CAA2E0 /* XMGTableBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,9 @@
 		A0DBFB9B23091A0100FA612E /* 百思不得姐UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "百思不得姐UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0DBFB9F23091A0100FA612E /* _____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____UITests.m"; sourceTree = "<group>"; };
 		A0DBFBA123091A0100FA612E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0DE9B752310E5DE00CAA2E0 /* XMGTableBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGTableBarController.h; sourceTree = "<group>"; };
+		A0DE9B762310E5DE00CAA2E0 /* XMGTableBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGTableBarController.m; sourceTree = "<group>"; };
+		A0DE9B78231119CF00CAA2E0 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,9 @@
 			children = (
 				A0DBFB7B23091A0000FA612E /* AppDelegate.h */,
 				A0DBFB7C23091A0000FA612E /* AppDelegate.m */,
+				A0DE9B752310E5DE00CAA2E0 /* XMGTableBarController.h */,
+				A0DE9B762310E5DE00CAA2E0 /* XMGTableBarController.m */,
+				A0DE9B78231119CF00CAA2E0 /* PrefixHeader.pch */,
 				A0DBFB8423091A0100FA612E /* Assets.xcassets */,
 				A0DBFB8923091A0100FA612E /* Info.plist */,
 				A0DBFB8A23091A0100FA612E /* main.m */,
@@ -251,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0DBFB8B23091A0100FA612E /* main.m in Sources */,
+				A0DE9B772310E5DE00CAA2E0 /* XMGTableBarController.m in Sources */,
 				A0DBFB7D23091A0000FA612E /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,6 +414,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X95794EHTS;
+				GCC_PREFIX_HEADER = "百思不得姐/PrefixHeader.pch";
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -425,6 +434,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X95794EHTS;
+				GCC_PREFIX_HEADER = "百思不得姐/PrefixHeader.pch";
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
