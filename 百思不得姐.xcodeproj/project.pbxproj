@@ -13,6 +13,7 @@
 		A0DBFB9523091A0100FA612E /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DBFB9423091A0100FA612E /* _____Tests.m */; };
 		A0DBFBA023091A0100FA612E /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DBFB9F23091A0100FA612E /* _____UITests.m */; };
 		A0DE9B772310E5DE00CAA2E0 /* XMGTableBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DE9B762310E5DE00CAA2E0 /* XMGTableBarController.m */; };
+		A0F21BD223128E2000339B07 /* XMGTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F21BD123128E2000339B07 /* XMGTabBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		A0DE9B752310E5DE00CAA2E0 /* XMGTableBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGTableBarController.h; sourceTree = "<group>"; };
 		A0DE9B762310E5DE00CAA2E0 /* XMGTableBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGTableBarController.m; sourceTree = "<group>"; };
 		A0DE9B78231119CF00CAA2E0 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A0F21BD023128E2000339B07 /* XMGTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGTabBar.h; sourceTree = "<group>"; };
+		A0F21BD123128E2000339B07 /* XMGTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGTabBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,8 @@
 				A0DBFB8423091A0100FA612E /* Assets.xcassets */,
 				A0DBFB8923091A0100FA612E /* Info.plist */,
 				A0DBFB8A23091A0100FA612E /* main.m */,
+				A0F21BD023128E2000339B07 /* XMGTabBar.h */,
+				A0F21BD123128E2000339B07 /* XMGTabBar.m */,
 			);
 			path = "百思不得姐";
 			sourceTree = "<group>";
@@ -259,6 +264,7 @@
 			files = (
 				A0DBFB8B23091A0100FA612E /* main.m in Sources */,
 				A0DE9B772310E5DE00CAA2E0 /* XMGTableBarController.m in Sources */,
+				A0F21BD223128E2000339B07 /* XMGTabBar.m in Sources */,
 				A0DBFB7D23091A0000FA612E /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

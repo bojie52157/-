@@ -7,7 +7,7 @@
 //
 
 #import "XMGTableBarController.h"
-
+#import "XMGTabBar.h"
 
 
 @interface XMGTableBarController ()
@@ -15,6 +15,7 @@
 @end
 
 @implementation XMGTableBarController
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -34,8 +35,12 @@
     //创建子控制器
     [self setupOneChildViewController:[[UITableViewController alloc]init] title:@"精华" image:@"tabBar_essence_icon" selectedImage:@"tabBar_essence_click_icon"];
     [self setupOneChildViewController:[[UIViewController alloc]init] title:@"新帖" image:@"tabBar_new_icon" selectedImage:@"tabBar_new_click_icon"];
+    
     [self setupOneChildViewController:[[UITableViewController alloc]init] title:@"关注" image:@"tabBar_friendTrends_icon" selectedImage:@"tabBar_friendTrends_click_icon"];
     [self setupOneChildViewController:[[UIViewController alloc]init] title:@"我" image:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon"];
+    
+    /***更换tabBar***/
+    [self setValue:[[XMGTabBar alloc]init] forKey:@"tabBar"];
 }
 
 /**
@@ -49,11 +54,11 @@
 -(void)setupOneChildViewController:(UIViewController *)vc title:(NSString *)title image:(NSString *)image selectedImage:(NSString *)selectedImage{
     vc.view.backgroundColor = XMGRandomColor;
     vc.tabBarItem.title = title;
-    vc.tabBarItem.image = [UIImage imageNamed:image];
-    vc.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];
+    if (image.length) {
+        vc.tabBarItem.image = [UIImage imageNamed:image];
+        vc.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];
+    }
     [self addChildViewController:vc];
     
 }
-
-
 @end
