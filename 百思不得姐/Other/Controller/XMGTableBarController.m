@@ -8,7 +8,10 @@
 
 #import "XMGTableBarController.h"
 #import "XMGTabBar.h"
-
+#import "XMGEssenceViewController.h"
+#import "XMGNewViewController.h"
+#import "XMGFollowViewController.h"
+#import "XMGMeViewController.h"
 
 @interface XMGTableBarController ()
 
@@ -19,7 +22,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    /**设置所有UITabBarItem的文字属性*/
+    [self setupItemTitleTextAttributes];
+    //创建子控制器
+    [self setupChildViewController];
+    /***更换tabBar***/
+    [self setValue:[[XMGTabBar alloc]init] forKey:@"tabBar"];
+}
 
+/**
+ 设置所有UITabBarItem的文字属性
+ */
+-(void)setupItemTitleTextAttributes{
     //文字属性
     UITabBarItem *item = [UITabBarItem appearance];
     //普通状态下文字
@@ -31,16 +45,19 @@
     NSMutableDictionary *selectedAttri = [NSMutableDictionary dictionary];
     selectedAttri[NSForegroundColorAttributeName] = [UIColor darkGrayColor];
     [item setTitleTextAttributes:selectedAttri forState:UIControlStateSelected];
+}
+
+/**
+ 创建子控件
+ */
+-(void)setupChildViewController{
+    [self setupOneChildViewController:[[XMGEssenceViewController alloc]init] title:@"精华" image:@"tabBar_essence_icon" selectedImage:@"tabBar_essence_click_icon"];
     
-    //创建子控制器
-    [self setupOneChildViewController:[[UITableViewController alloc]init] title:@"精华" image:@"tabBar_essence_icon" selectedImage:@"tabBar_essence_click_icon"];
-    [self setupOneChildViewController:[[UIViewController alloc]init] title:@"新帖" image:@"tabBar_new_icon" selectedImage:@"tabBar_new_click_icon"];
+    [self setupOneChildViewController:[[XMGNewViewController alloc]init] title:@"新帖" image:@"tabBar_new_icon" selectedImage:@"tabBar_new_click_icon"];
     
-    [self setupOneChildViewController:[[UITableViewController alloc]init] title:@"关注" image:@"tabBar_friendTrends_icon" selectedImage:@"tabBar_friendTrends_click_icon"];
-    [self setupOneChildViewController:[[UIViewController alloc]init] title:@"我" image:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon"];
+    [self setupOneChildViewController:[[XMGFollowViewController alloc]init] title:@"关注" image:@"tabBar_friendTrends_icon" selectedImage:@"tabBar_friendTrends_click_icon"];
     
-    /***更换tabBar***/
-    [self setValue:[[XMGTabBar alloc]init] forKey:@"tabBar"];
+    [self setupOneChildViewController:[[XMGNewViewController alloc]init] title:@"我" image:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon"];
 }
 
 /**
@@ -61,4 +78,6 @@
     [self addChildViewController:vc];
     
 }
+
+
 @end

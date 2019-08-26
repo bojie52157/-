@@ -13,6 +13,11 @@
 		A0DBFB9523091A0100FA612E /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DBFB9423091A0100FA612E /* _____Tests.m */; };
 		A0DBFBA023091A0100FA612E /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DBFB9F23091A0100FA612E /* _____UITests.m */; };
 		A0DE9B772310E5DE00CAA2E0 /* XMGTableBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DE9B762310E5DE00CAA2E0 /* XMGTableBarController.m */; };
+		A0DEB5A523137FDD0054C29B /* UIView+UIView_XMGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DEB5A423137FDD0054C29B /* UIView+UIView_XMGExtension.m */; };
+		A0E25D3D231423100025072F /* XMGEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E25D3C231423100025072F /* XMGEssenceViewController.m */; };
+		A0E25D402314231F0025072F /* XMGNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E25D3F2314231F0025072F /* XMGNewViewController.m */; };
+		A0E25D432314233F0025072F /* XMGFollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E25D422314233F0025072F /* XMGFollowViewController.m */; };
+		A0E25D462314234D0025072F /* XMGMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E25D452314234D0025072F /* XMGMeViewController.m */; };
 		A0F21BD223128E2000339B07 /* XMGTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F21BD123128E2000339B07 /* XMGTabBar.m */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +54,16 @@
 		A0DE9B752310E5DE00CAA2E0 /* XMGTableBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGTableBarController.h; sourceTree = "<group>"; };
 		A0DE9B762310E5DE00CAA2E0 /* XMGTableBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGTableBarController.m; sourceTree = "<group>"; };
 		A0DE9B78231119CF00CAA2E0 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A0DEB5A323137FDD0054C29B /* UIView+UIView_XMGExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+UIView_XMGExtension.h"; sourceTree = "<group>"; };
+		A0DEB5A423137FDD0054C29B /* UIView+UIView_XMGExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+UIView_XMGExtension.m"; sourceTree = "<group>"; };
+		A0E25D3B231423100025072F /* XMGEssenceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGEssenceViewController.h; sourceTree = "<group>"; };
+		A0E25D3C231423100025072F /* XMGEssenceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGEssenceViewController.m; sourceTree = "<group>"; };
+		A0E25D3E2314231F0025072F /* XMGNewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGNewViewController.h; sourceTree = "<group>"; };
+		A0E25D3F2314231F0025072F /* XMGNewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGNewViewController.m; sourceTree = "<group>"; };
+		A0E25D412314233F0025072F /* XMGFollowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGFollowViewController.h; sourceTree = "<group>"; };
+		A0E25D422314233F0025072F /* XMGFollowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGFollowViewController.m; sourceTree = "<group>"; };
+		A0E25D442314234D0025072F /* XMGMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGMeViewController.h; sourceTree = "<group>"; };
+		A0E25D452314234D0025072F /* XMGMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGMeViewController.m; sourceTree = "<group>"; };
 		A0F21BD023128E2000339B07 /* XMGTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGTabBar.h; sourceTree = "<group>"; };
 		A0F21BD123128E2000339B07 /* XMGTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGTabBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,16 +116,13 @@
 		A0DBFB7A23091A0000FA612E /* 百思不得姐 */ = {
 			isa = PBXGroup;
 			children = (
-				A0DBFB7B23091A0000FA612E /* AppDelegate.h */,
-				A0DBFB7C23091A0000FA612E /* AppDelegate.m */,
-				A0DE9B752310E5DE00CAA2E0 /* XMGTableBarController.h */,
-				A0DE9B762310E5DE00CAA2E0 /* XMGTableBarController.m */,
-				A0DE9B78231119CF00CAA2E0 /* PrefixHeader.pch */,
+				A0E25D47231426860025072F /* Essence */,
+				A0E25D4B231426E70025072F /* New */,
+				A0E25D4C2314270F0025072F /* Follow */,
+				A0E25D50231427470025072F /* Me */,
+				A0E25D54231427770025072F /* Other */,
 				A0DBFB8423091A0100FA612E /* Assets.xcassets */,
 				A0DBFB8923091A0100FA612E /* Info.plist */,
-				A0DBFB8A23091A0100FA612E /* main.m */,
-				A0F21BD023128E2000339B07 /* XMGTabBar.h */,
-				A0F21BD123128E2000339B07 /* XMGTabBar.m */,
 			);
 			path = "百思不得姐";
 			sourceTree = "<group>";
@@ -131,6 +143,179 @@
 				A0DBFBA123091A0100FA612E /* Info.plist */,
 			);
 			path = "百思不得姐UITests";
+			sourceTree = "<group>";
+		};
+		A0E25D47231426860025072F /* Essence */ = {
+			isa = PBXGroup;
+			children = (
+				A0E25D4A231426D10025072F /* Model */,
+				A0E25D49231426CC0025072F /* View */,
+				A0E25D48231426C40025072F /* Controller */,
+			);
+			path = Essence;
+			sourceTree = "<group>";
+		};
+		A0E25D48231426C40025072F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A0E25D3B231423100025072F /* XMGEssenceViewController.h */,
+				A0E25D3C231423100025072F /* XMGEssenceViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A0E25D49231426CC0025072F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A0E25D4A231426D10025072F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A0E25D4B231426E70025072F /* New */ = {
+			isa = PBXGroup;
+			children = (
+				A0E25D57231427B60025072F /* Model */,
+				A0E25D56231427B10025072F /* View */,
+				A0E25D55231427A80025072F /* Controller */,
+			);
+			path = New;
+			sourceTree = "<group>";
+		};
+		A0E25D4C2314270F0025072F /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+				A0E25D4F231427300025072F /* Model */,
+				A0E25D4E231427280025072F /* View */,
+				A0E25D4D2314271C0025072F /* Controller */,
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		A0E25D4D2314271C0025072F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A0E25D412314233F0025072F /* XMGFollowViewController.h */,
+				A0E25D422314233F0025072F /* XMGFollowViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A0E25D4E231427280025072F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A0E25D4F231427300025072F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A0E25D50231427470025072F /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				A0E25D532314275D0025072F /* Model */,
+				A0E25D52231427570025072F /* View */,
+				A0E25D512314274F0025072F /* Controller */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		A0E25D512314274F0025072F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A0E25D442314234D0025072F /* XMGMeViewController.h */,
+				A0E25D452314234D0025072F /* XMGMeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A0E25D52231427570025072F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A0E25D532314275D0025072F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A0E25D54231427770025072F /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				A0E25D5A231428550025072F /* Controller */,
+				A0E25D59231428460025072F /* View */,
+				A0E25D58231428320025072F /* Category */,
+				A0DBFB7B23091A0000FA612E /* AppDelegate.h */,
+				A0DBFB7C23091A0000FA612E /* AppDelegate.m */,
+				A0DE9B78231119CF00CAA2E0 /* PrefixHeader.pch */,
+				A0DBFB8A23091A0100FA612E /* main.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		A0E25D55231427A80025072F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A0E25D3E2314231F0025072F /* XMGNewViewController.h */,
+				A0E25D3F2314231F0025072F /* XMGNewViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A0E25D56231427B10025072F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A0E25D57231427B60025072F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A0E25D58231428320025072F /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				A0DEB5A323137FDD0054C29B /* UIView+UIView_XMGExtension.h */,
+				A0DEB5A423137FDD0054C29B /* UIView+UIView_XMGExtension.m */,
+				A0F21BD023128E2000339B07 /* XMGTabBar.h */,
+				A0F21BD123128E2000339B07 /* XMGTabBar.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		A0E25D59231428460025072F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A0E25D5A231428550025072F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A0DE9B752310E5DE00CAA2E0 /* XMGTableBarController.h */,
+				A0DE9B762310E5DE00CAA2E0 /* XMGTableBarController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +447,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0E25D3D231423100025072F /* XMGEssenceViewController.m in Sources */,
 				A0DBFB8B23091A0100FA612E /* main.m in Sources */,
+				A0E25D432314233F0025072F /* XMGFollowViewController.m in Sources */,
 				A0DE9B772310E5DE00CAA2E0 /* XMGTableBarController.m in Sources */,
+				A0DEB5A523137FDD0054C29B /* UIView+UIView_XMGExtension.m in Sources */,
 				A0F21BD223128E2000339B07 /* XMGTabBar.m in Sources */,
+				A0E25D462314234D0025072F /* XMGMeViewController.m in Sources */,
+				A0E25D402314231F0025072F /* XMGNewViewController.m in Sources */,
 				A0DBFB7D23091A0000FA612E /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

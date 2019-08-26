@@ -32,31 +32,33 @@
 #pragma mark - 初始化
 - (void)layoutSubviews{
     [super layoutSubviews];
+    /*****按钮尺寸****/
+    CGFloat buttonW = self.xmg_width / 5;
+    CGFloat buttonH = self.xmg_height;
     
     /**设置所有UITabBarButton的frame***/
-    //按钮尺寸
-    CGFloat buttonW = self.frame.size.width / 5;
-    CGFloat buttonH = self.frame.size.height;
-    CGFloat buttonY = 0;
+    CGFloat tabBarButtonY = 0;
     //按钮索引
-    int buttonIndex = 0;
+    int tabBarButtonIndex = 0;
     
     for (UIView *subview in self.subviews) {
         //过滤掉非UITabBarButton
         if (subview.class != NSClassFromString(@"UITabBarButton")) continue;
         //设置frame
-        CGFloat buttonX = buttonIndex * buttonW;
-        if (buttonIndex >= 2) {//右边的2个UITabBarButton
-            buttonX += buttonW;
+        CGFloat tabBarButtonX = tabBarButtonIndex * buttonW;
+        if (tabBarButtonIndex >= 2) {//右边的2个UITabBarButton
+            tabBarButtonX += buttonW;
         }
-        subview.frame = CGRectMake(buttonX, buttonY, buttonW, buttonH);
+        subview.frame = CGRectMake(tabBarButtonX, tabBarButtonY, buttonW, buttonH);
         //增加索引
-        buttonIndex++;
+        tabBarButtonIndex++;
     }
     
     /**设置发布按钮的frame**/
-    self.publishButton.frame = CGRectMake(0, 0, buttonW, buttonH);
-    self.publishButton.center = CGPointMake(self.frame.size.width * 0.5, self.frame.size.height * 0.5);
+    self.publishButton.xmg_width = buttonW;
+    self.publishButton.xmg_height = buttonH;
+    self.publishButton.xmg_centerX = self.xmg_width * 0.5;
+    self.publishButton.xmg_centerY = self.xmg_height * 0.5;
 }
 
 #pragma mark -监听点击事件
