@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIView (UIView_XMGExtension)
 
+@property(nonatomic, assign) CGSize  xmg_size;
 @property(nonatomic, assign) CGFloat xmg_width;
 @property(nonatomic, assign) CGFloat xmg_height;
 @property(nonatomic, assign) CGFloat xmg_x;

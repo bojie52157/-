@@ -10,6 +10,10 @@
 
 @implementation UIView (UIView_XMGExtension)
 //get方法
+-(CGSize)xmg_size{
+    return self.frame.size;
+}
+
 -(CGFloat)xmg_width{
     return self.frame.size.width;
 }
@@ -33,6 +37,12 @@
 
 
 //set方法
+-(void)setXmg_size:(CGSize)xmg_size{
+    CGRect frame = self.frame;
+    frame.size = xmg_size;
+    self.frame = frame;
+}
+
 -(void)setXmg_width:(CGFloat)xmg_width{
     CGRect frame = self.frame;
     frame.size.width = xmg_width;
