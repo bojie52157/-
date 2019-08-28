@@ -7,7 +7,7 @@
 //
 
 #import "XMGMeViewController.h"
-
+#import "XMGSettingViewController.h"
 @interface XMGMeViewController ()
 
 @end
@@ -18,25 +18,17 @@
     [super viewDidLoad];
     self.navigationItem.title = @"我的";
     //设置
-    UIButton *settingButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [settingButton setImage:[UIImage imageNamed:@"mine-setting-icon"] forState:UIControlStateNormal];
-    [settingButton setImage:[UIImage imageNamed:@"mine-setting-icon-click"] forState:UIControlStateHighlighted];
-    [settingButton addTarget:self action:@selector(settingClick) forControlEvents:UIControlEventTouchUpInside];
-    [settingButton sizeToFit];
-    UIBarButtonItem *settingItem = [[UIBarButtonItem alloc]initWithCustomView:settingButton];
+    UIBarButtonItem *settingItem = [UIBarButtonItem itemWithImage:@"mine-setting-icon" highImage:@"mine-setting-icon-click" target:self action:@selector(settingClick)];
     
     //月亮
-    UIButton *moonButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [moonButton setImage:[UIImage imageNamed:@"mine-moon-icon"] forState:UIControlStateNormal];
-    [moonButton setImage:[UIImage imageNamed:@"mine-moon-icon-click"] forState:UIControlStateHighlighted];
-    [moonButton addTarget:self action:@selector(moonClick) forControlEvents:UIControlEventTouchUpInside];
-    UIBarButtonItem *moonItem = [[UIBarButtonItem alloc]initWithCustomView:moonButton];
+    UIBarButtonItem *moonItem = [UIBarButtonItem itemWithImage:@"mine-moon-icon" highImage:@"mine-moon-icon-click" target:self action:@selector(moonClick)];
     
     self.navigationItem.rightBarButtonItems = @[moonItem,settingItem];
 }
 
 - (void)settingClick{
-    
+    XMGSettingViewController *setting = [[XMGSettingViewController alloc]init];
+    [self.navigationController pushViewController:setting animated:YES];
 }
 
 - (void)moonClick{

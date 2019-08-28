@@ -30,6 +30,13 @@
 }
 
 #pragma mark - 初始化
+-(instancetype)initWithFrame:(CGRect)frame{
+    if (self = [super initWithFrame:frame]) {
+        self.backgroundImage = [UIImage imageNamed:@"tabBar_icon"];
+    }
+    return self;
+}
+
 - (void)layoutSubviews{
     [super layoutSubviews];
     /*****按钮尺寸****/
