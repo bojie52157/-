@@ -8,6 +8,7 @@
 
 #import "XMGFollowViewController.h"
 #import "XMGRecommendFollowViewController.h"
+#import "XMGLoginRegisterViewController.h"
 @interface XMGFollowViewController ()
 
 @end
@@ -19,6 +20,11 @@
     self.navigationItem.title = @"我的关注";
     //左边
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"friendsRecommentIcon" highImage:@"friendsRecommentIcon-click" target:self action:@selector(followClick)];
+}
+
+- (IBAction)LoginRegister {
+    XMGLoginRegisterViewController *loginRegister = [[XMGLoginRegisterViewController alloc]init];
+    [self presentViewController:loginRegister animated:YES completion:nil];
 }
 
 - (void)followClick{

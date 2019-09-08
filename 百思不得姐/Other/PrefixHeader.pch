@@ -13,6 +13,7 @@
 #ifdef __OBJC__
 #import "UIView+UIView_XMGExtension.h"
 #import "UIBarButtonItem+XMGExtension.h"
+#import "UITextField+XMGExtension.h"
 //日志
 #ifdef DEBUG
 #define XMGLog(...) NSLog(__VA_ARGS__)

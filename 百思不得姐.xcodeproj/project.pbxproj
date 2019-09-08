@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A01762DC2316BCA500AA1B75 /* XMGFollowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A01762DB2316BCA500AA1B75 /* XMGFollowViewController.xib */; };
+		A06C11BC23179DDE00B69123 /* XMGQuickLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A06C11BB23179DDE00B69123 /* XMGQuickLoginButton.m */; };
+		A0CEACC42319139800B8CF2A /* XMGLoginRegisterTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CEACC32319139800B8CF2A /* XMGLoginRegisterTextField.m */; };
 		A0D9B22D231653A700E03904 /* UIBarButtonItem+XMGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D9B22C231653A700E03904 /* UIBarButtonItem+XMGExtension.m */; };
 		A0D9B230231668BE00E03904 /* XMGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D9B22F231668BE00E03904 /* XMGNavigationController.m */; };
 		A0D9B23323166F6E00E03904 /* XMGRecommendFollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D9B23223166F6E00E03904 /* XMGRecommendFollowViewController.m */; };
@@ -22,6 +25,9 @@
 		A0E25D402314231F0025072F /* XMGNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E25D3F2314231F0025072F /* XMGNewViewController.m */; };
 		A0E25D432314233F0025072F /* XMGFollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E25D422314233F0025072F /* XMGFollowViewController.m */; };
 		A0E25D462314234D0025072F /* XMGMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E25D452314234D0025072F /* XMGMeViewController.m */; };
+		A0E2D39D2324C7B200330FD9 /* UITextField+XMGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E2D39C2324C7B200330FD9 /* UITextField+XMGExtension.m */; };
+		A0EE42BB231B4451005A4B5D /* XMGLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0EE42B8231B4451005A4B5D /* XMGLoginRegisterViewController.xib */; };
+		A0EE42BC231B4451005A4B5D /* XMGLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EE42BA231B4451005A4B5D /* XMGLoginRegisterViewController.m */; };
 		A0F21BD223128E2000339B07 /* XMGTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F21BD123128E2000339B07 /* XMGTabBar.m */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +49,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A01762DB2316BCA500AA1B75 /* XMGFollowViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XMGFollowViewController.xib; sourceTree = "<group>"; };
+		A06C11BA23179DDE00B69123 /* XMGQuickLoginButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGQuickLoginButton.h; sourceTree = "<group>"; };
+		A06C11BB23179DDE00B69123 /* XMGQuickLoginButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGQuickLoginButton.m; sourceTree = "<group>"; };
+		A0CEACC22319139800B8CF2A /* XMGLoginRegisterTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGLoginRegisterTextField.h; sourceTree = "<group>"; };
+		A0CEACC32319139800B8CF2A /* XMGLoginRegisterTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGLoginRegisterTextField.m; sourceTree = "<group>"; };
 		A0D9B22B231653A700E03904 /* UIBarButtonItem+XMGExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+XMGExtension.h"; sourceTree = "<group>"; };
 		A0D9B22C231653A700E03904 /* UIBarButtonItem+XMGExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+XMGExtension.m"; sourceTree = "<group>"; };
 		A0D9B22E231668BE00E03904 /* XMGNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGNavigationController.h; sourceTree = "<group>"; };
@@ -76,6 +87,11 @@
 		A0E25D422314233F0025072F /* XMGFollowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGFollowViewController.m; sourceTree = "<group>"; };
 		A0E25D442314234D0025072F /* XMGMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGMeViewController.h; sourceTree = "<group>"; };
 		A0E25D452314234D0025072F /* XMGMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGMeViewController.m; sourceTree = "<group>"; };
+		A0E2D39B2324C7B200330FD9 /* UITextField+XMGExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+XMGExtension.h"; sourceTree = "<group>"; };
+		A0E2D39C2324C7B200330FD9 /* UITextField+XMGExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+XMGExtension.m"; sourceTree = "<group>"; };
+		A0EE42B8231B4451005A4B5D /* XMGLoginRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGLoginRegisterViewController.xib; sourceTree = "<group>"; };
+		A0EE42B9231B4451005A4B5D /* XMGLoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGLoginRegisterViewController.h; sourceTree = "<group>"; };
+		A0EE42BA231B4451005A4B5D /* XMGLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGLoginRegisterViewController.m; sourceTree = "<group>"; };
 		A0F21BD023128E2000339B07 /* XMGTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGTabBar.h; sourceTree = "<group>"; };
 		A0F21BD123128E2000339B07 /* XMGTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGTabBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -215,6 +231,7 @@
 			children = (
 				A0E25D412314233F0025072F /* XMGFollowViewController.h */,
 				A0E25D422314233F0025072F /* XMGFollowViewController.m */,
+				A01762DB2316BCA500AA1B75 /* XMGFollowViewController.xib */,
 				A0D9B23123166F6E00E03904 /* XMGRecommendFollowViewController.h */,
 				A0D9B23223166F6E00E03904 /* XMGRecommendFollowViewController.m */,
 			);
@@ -314,6 +331,8 @@
 				A0DEB5A423137FDD0054C29B /* UIView+UIView_XMGExtension.m */,
 				A0D9B22B231653A700E03904 /* UIBarButtonItem+XMGExtension.h */,
 				A0D9B22C231653A700E03904 /* UIBarButtonItem+XMGExtension.m */,
+				A0E2D39B2324C7B200330FD9 /* UITextField+XMGExtension.h */,
+				A0E2D39C2324C7B200330FD9 /* UITextField+XMGExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -321,6 +340,12 @@
 		A0E25D59231428460025072F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A0F21BD023128E2000339B07 /* XMGTabBar.h */,
+				A0F21BD123128E2000339B07 /* XMGTabBar.m */,
+				A06C11BA23179DDE00B69123 /* XMGQuickLoginButton.h */,
+				A06C11BB23179DDE00B69123 /* XMGQuickLoginButton.m */,
+				A0CEACC22319139800B8CF2A /* XMGLoginRegisterTextField.h */,
+				A0CEACC32319139800B8CF2A /* XMGLoginRegisterTextField.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -328,10 +353,11 @@
 		A0E25D5A231428550025072F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A0EE42B9231B4451005A4B5D /* XMGLoginRegisterViewController.h */,
+				A0EE42BA231B4451005A4B5D /* XMGLoginRegisterViewController.m */,
+				A0EE42B8231B4451005A4B5D /* XMGLoginRegisterViewController.xib */,
 				A0DE9B752310E5DE00CAA2E0 /* XMGTableBarController.h */,
 				A0DE9B762310E5DE00CAA2E0 /* XMGTableBarController.m */,
-				A0F21BD023128E2000339B07 /* XMGTabBar.h */,
-				A0F21BD123128E2000339B07 /* XMGTabBar.m */,
 				A0D9B22E231668BE00E03904 /* XMGNavigationController.h */,
 				A0D9B22F231668BE00E03904 /* XMGNavigationController.m */,
 			);
@@ -442,7 +468,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A01762DC2316BCA500AA1B75 /* XMGFollowViewController.xib in Resources */,
 				A0DBFB8523091A0100FA612E /* Assets.xcassets in Resources */,
+				A0EE42BB231B4451005A4B5D /* XMGLoginRegisterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,11 +497,15 @@
 			files = (
 				A0D9B23623166F8000E03904 /* XMGSettingViewController.m in Sources */,
 				A0E25D3D231423100025072F /* XMGEssenceViewController.m in Sources */,
+				A0E2D39D2324C7B200330FD9 /* UITextField+XMGExtension.m in Sources */,
 				A0D9B23323166F6E00E03904 /* XMGRecommendFollowViewController.m in Sources */,
 				A0D9B230231668BE00E03904 /* XMGNavigationController.m in Sources */,
 				A0DBFB8B23091A0100FA612E /* main.m in Sources */,
 				A0E25D432314233F0025072F /* XMGFollowViewController.m in Sources */,
 				A0DE9B772310E5DE00CAA2E0 /* XMGTableBarController.m in Sources */,
+				A06C11BC23179DDE00B69123 /* XMGQuickLoginButton.m in Sources */,
+				A0EE42BC231B4451005A4B5D /* XMGLoginRegisterViewController.m in Sources */,
+				A0CEACC42319139800B8CF2A /* XMGLoginRegisterTextField.m in Sources */,
 				A0DEB5A523137FDD0054C29B /* UIView+UIView_XMGExtension.m in Sources */,
 				A0F21BD223128E2000339B07 /* XMGTabBar.m in Sources */,
 				A0E25D462314234D0025072F /* XMGMeViewController.m in Sources */,
