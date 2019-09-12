@@ -1,8 +1,8 @@
 //
-//  XMGMeViewController.h
+//  XMGMeCell.h
 //  百思不得姐
 //
-//  Created by 孙 on 2019/8/26.
+//  Created by 孙 on 2019/9/11.
 //  Copyright © 2019 小情调. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface XMGMeViewController : UITableViewController
+@interface XMGMeCell : UITableViewCell
 
 @end
 

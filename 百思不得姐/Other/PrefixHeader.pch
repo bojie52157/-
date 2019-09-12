@@ -14,6 +14,7 @@
 #import "UIView+UIView_XMGExtension.h"
 #import "UIBarButtonItem+XMGExtension.h"
 #import "UITextField+XMGExtension.h"
+#import "XMGConst.h"
 //日志
 #ifdef DEBUG
 #define XMGLog(...) NSLog(__VA_ARGS__)

@@ -34,6 +34,17 @@
 -(CGFloat)xmg_centerY{
     return self.center.y;
 }
+- (CGFloat)xmg_right
+{
+    //    return self.xmg_x + self.xmg_width;
+    return CGRectGetMaxX(self.frame);
+}
+
+- (CGFloat)xmg_bottom
+{
+    //    return self.xmg_y + self.xmg_height;
+    return CGRectGetMaxY(self.frame);
+}
 
 
 //set方法
@@ -75,5 +86,13 @@
     center.y = xmg_centerY;
     self.center = center;
 }
+- (void)setXmg_right:(CGFloat)xmg_right
+{
+    self.xmg_x = xmg_right - self.xmg_width;
+}
 
+- (void)setXmg_bottom:(CGFloat)xmg_bottom
+{
+    self.xmg_y = xmg_bottom - self.xmg_height;
+}
 @end

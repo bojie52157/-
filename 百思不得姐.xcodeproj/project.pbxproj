@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2DD135BDC23B9B7E8649D663 /* libPods-百思不得姐Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDE74FE0D6AACB45054E9C4A /* libPods-百思不得姐Tests.a */; };
+		5CEA165CBE049AE5103DC2CA /* libPods-百思不得姐.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B62C7F2820CDAD27B1755B13 /* libPods-百思不得姐.a */; };
 		A01762DC2316BCA500AA1B75 /* XMGFollowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A01762DB2316BCA500AA1B75 /* XMGFollowViewController.xib */; };
 		A06C11BC23179DDE00B69123 /* XMGQuickLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A06C11BB23179DDE00B69123 /* XMGQuickLoginButton.m */; };
+		A0C1A90A23289EB0001AD1B8 /* XMGConst.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1A90923289EB0001AD1B8 /* XMGConst.m */; };
+		A0C1A90D23289FB0001AD1B8 /* XMGMeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1A90C23289FB0001AD1B8 /* XMGMeCell.m */; };
+		A0C1A9102328D1B2001AD1B8 /* XMGMeFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1A90F2328D1B2001AD1B8 /* XMGMeFooterView.m */; };
 		A0CEACC42319139800B8CF2A /* XMGLoginRegisterTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CEACC32319139800B8CF2A /* XMGLoginRegisterTextField.m */; };
 		A0D9B22D231653A700E03904 /* UIBarButtonItem+XMGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D9B22C231653A700E03904 /* UIBarButtonItem+XMGExtension.m */; };
 		A0D9B230231668BE00E03904 /* XMGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D9B22F231668BE00E03904 /* XMGNavigationController.m */; };
 		A0D9B23323166F6E00E03904 /* XMGRecommendFollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D9B23223166F6E00E03904 /* XMGRecommendFollowViewController.m */; };
-		A0D9B23623166F8000E03904 /* XMGSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D9B23523166F8000E03904 /* XMGSettingViewController.m */; };
 		A0DBFB7D23091A0000FA612E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DBFB7C23091A0000FA612E /* AppDelegate.m */; };
 		A0DBFB8523091A0100FA612E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0DBFB8423091A0100FA612E /* Assets.xcassets */; };
 		A0DBFB8B23091A0100FA612E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DBFB8A23091A0100FA612E /* main.m */; };
 		A0DBFB9523091A0100FA612E /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DBFB9423091A0100FA612E /* _____Tests.m */; };
 		A0DBFBA023091A0100FA612E /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DBFB9F23091A0100FA612E /* _____UITests.m */; };
+		A0DBFE402328F600008851BC /* XMGMeSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DBFE3F2328F600008851BC /* XMGMeSquare.m */; };
+		A0DBFE432328F6C2008851BC /* XMGSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DBFE422328F6C2008851BC /* XMGSettingViewController.m */; };
 		A0DE9B772310E5DE00CAA2E0 /* XMGTableBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DE9B762310E5DE00CAA2E0 /* XMGTableBarController.m */; };
 		A0DEB5A523137FDD0054C29B /* UIView+UIView_XMGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DEB5A423137FDD0054C29B /* UIView+UIView_XMGExtension.m */; };
 		A0E25D3D231423100025072F /* XMGEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E25D3C231423100025072F /* XMGEssenceViewController.m */; };
@@ -29,6 +35,7 @@
 		A0EE42BB231B4451005A4B5D /* XMGLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0EE42B8231B4451005A4B5D /* XMGLoginRegisterViewController.xib */; };
 		A0EE42BC231B4451005A4B5D /* XMGLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EE42BA231B4451005A4B5D /* XMGLoginRegisterViewController.m */; };
 		A0F21BD223128E2000339B07 /* XMGTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F21BD123128E2000339B07 /* XMGTabBar.m */; };
+		BE5CBB5D0BE4ECC68749A92C /* libPods-百思不得姐UITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86087CE19D2DFE4BE321F0C4 /* libPods-百思不得姐UITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,9 +56,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01946EE54921F652C80235A0 /* Pods-百思不得姐UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐UITests/Pods-百思不得姐UITests.release.xcconfig"; sourceTree = "<group>"; };
+		053D199C4FC16FB08F8CE175 /* Pods-百思不得姐.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐.release.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐.release.xcconfig"; sourceTree = "<group>"; };
+		17382F0CE067B412B5CEF72B /* Pods-百思不得姐UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐UITests/Pods-百思不得姐UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		75D22A8A7AB2DAA1B0AF71D9 /* Pods-百思不得姐.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐.debug.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐.debug.xcconfig"; sourceTree = "<group>"; };
+		86087CE19D2DFE4BE321F0C4 /* libPods-百思不得姐UITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-百思不得姐UITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A01762DB2316BCA500AA1B75 /* XMGFollowViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XMGFollowViewController.xib; sourceTree = "<group>"; };
 		A06C11BA23179DDE00B69123 /* XMGQuickLoginButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGQuickLoginButton.h; sourceTree = "<group>"; };
 		A06C11BB23179DDE00B69123 /* XMGQuickLoginButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGQuickLoginButton.m; sourceTree = "<group>"; };
+		A0C1A90823289EB0001AD1B8 /* XMGConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGConst.h; sourceTree = "<group>"; };
+		A0C1A90923289EB0001AD1B8 /* XMGConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGConst.m; sourceTree = "<group>"; };
+		A0C1A90B23289FB0001AD1B8 /* XMGMeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGMeCell.h; sourceTree = "<group>"; };
+		A0C1A90C23289FB0001AD1B8 /* XMGMeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGMeCell.m; sourceTree = "<group>"; };
+		A0C1A90E2328D1B2001AD1B8 /* XMGMeFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGMeFooterView.h; sourceTree = "<group>"; };
+		A0C1A90F2328D1B2001AD1B8 /* XMGMeFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGMeFooterView.m; sourceTree = "<group>"; };
 		A0CEACC22319139800B8CF2A /* XMGLoginRegisterTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGLoginRegisterTextField.h; sourceTree = "<group>"; };
 		A0CEACC32319139800B8CF2A /* XMGLoginRegisterTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGLoginRegisterTextField.m; sourceTree = "<group>"; };
 		A0D9B22B231653A700E03904 /* UIBarButtonItem+XMGExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+XMGExtension.h"; sourceTree = "<group>"; };
@@ -60,8 +78,6 @@
 		A0D9B22F231668BE00E03904 /* XMGNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGNavigationController.m; sourceTree = "<group>"; };
 		A0D9B23123166F6E00E03904 /* XMGRecommendFollowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGRecommendFollowViewController.h; sourceTree = "<group>"; };
 		A0D9B23223166F6E00E03904 /* XMGRecommendFollowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGRecommendFollowViewController.m; sourceTree = "<group>"; };
-		A0D9B23423166F8000E03904 /* XMGSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGSettingViewController.h; sourceTree = "<group>"; };
-		A0D9B23523166F8000E03904 /* XMGSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGSettingViewController.m; sourceTree = "<group>"; };
 		A0DBFB7823091A0000FA612E /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0DBFB7B23091A0000FA612E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A0DBFB7C23091A0000FA612E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -74,6 +90,10 @@
 		A0DBFB9B23091A0100FA612E /* 百思不得姐UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "百思不得姐UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0DBFB9F23091A0100FA612E /* _____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____UITests.m"; sourceTree = "<group>"; };
 		A0DBFBA123091A0100FA612E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0DBFE3E2328F600008851BC /* XMGMeSquare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGMeSquare.h; sourceTree = "<group>"; };
+		A0DBFE3F2328F600008851BC /* XMGMeSquare.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGMeSquare.m; sourceTree = "<group>"; };
+		A0DBFE412328F6C2008851BC /* XMGSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGSettingViewController.h; sourceTree = "<group>"; };
+		A0DBFE422328F6C2008851BC /* XMGSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGSettingViewController.m; sourceTree = "<group>"; };
 		A0DE9B752310E5DE00CAA2E0 /* XMGTableBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGTableBarController.h; sourceTree = "<group>"; };
 		A0DE9B762310E5DE00CAA2E0 /* XMGTableBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGTableBarController.m; sourceTree = "<group>"; };
 		A0DE9B78231119CF00CAA2E0 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -94,6 +114,10 @@
 		A0EE42BA231B4451005A4B5D /* XMGLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGLoginRegisterViewController.m; sourceTree = "<group>"; };
 		A0F21BD023128E2000339B07 /* XMGTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGTabBar.h; sourceTree = "<group>"; };
 		A0F21BD123128E2000339B07 /* XMGTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGTabBar.m; sourceTree = "<group>"; };
+		B15AAC2F7127B1AAD078ED48 /* Pods-百思不得姐Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐Tests/Pods-百思不得姐Tests.release.xcconfig"; sourceTree = "<group>"; };
+		B62C7F2820CDAD27B1755B13 /* libPods-百思不得姐.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-百思不得姐.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5C0285CA3A3EEB14F1FDF05 /* Pods-百思不得姐Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐Tests/Pods-百思不得姐Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		FDE74FE0D6AACB45054E9C4A /* libPods-百思不得姐Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-百思不得姐Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CEA165CBE049AE5103DC2CA /* libPods-百思不得姐.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DD135BDC23B9B7E8649D663 /* libPods-百思不得姐Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,12 +141,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE5CBB5D0BE4ECC68749A92C /* libPods-百思不得姐UITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D3E557BC6F98B1170F87371 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B62C7F2820CDAD27B1755B13 /* libPods-百思不得姐.a */,
+				FDE74FE0D6AACB45054E9C4A /* libPods-百思不得姐Tests.a */,
+				86087CE19D2DFE4BE321F0C4 /* libPods-百思不得姐UITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		285F504E51BE767CD77F1345 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75D22A8A7AB2DAA1B0AF71D9 /* Pods-百思不得姐.debug.xcconfig */,
+				053D199C4FC16FB08F8CE175 /* Pods-百思不得姐.release.xcconfig */,
+				C5C0285CA3A3EEB14F1FDF05 /* Pods-百思不得姐Tests.debug.xcconfig */,
+				B15AAC2F7127B1AAD078ED48 /* Pods-百思不得姐Tests.release.xcconfig */,
+				17382F0CE067B412B5CEF72B /* Pods-百思不得姐UITests.debug.xcconfig */,
+				01946EE54921F652C80235A0 /* Pods-百思不得姐UITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A0DBFB6F23091A0000FA612E = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +178,8 @@
 				A0DBFB9323091A0100FA612E /* 百思不得姐Tests */,
 				A0DBFB9E23091A0100FA612E /* 百思不得姐UITests */,
 				A0DBFB7923091A0000FA612E /* Products */,
+				285F504E51BE767CD77F1345 /* Pods */,
+				1D3E557BC6F98B1170F87371 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -265,10 +317,10 @@
 		A0E25D512314274F0025072F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A0DBFE412328F6C2008851BC /* XMGSettingViewController.h */,
+				A0DBFE422328F6C2008851BC /* XMGSettingViewController.m */,
 				A0E25D442314234D0025072F /* XMGMeViewController.h */,
 				A0E25D452314234D0025072F /* XMGMeViewController.m */,
-				A0D9B23423166F8000E03904 /* XMGSettingViewController.h */,
-				A0D9B23523166F8000E03904 /* XMGSettingViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -276,6 +328,10 @@
 		A0E25D52231427570025072F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A0C1A90B23289FB0001AD1B8 /* XMGMeCell.h */,
+				A0C1A90C23289FB0001AD1B8 /* XMGMeCell.m */,
+				A0C1A90E2328D1B2001AD1B8 /* XMGMeFooterView.h */,
+				A0C1A90F2328D1B2001AD1B8 /* XMGMeFooterView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -283,6 +339,8 @@
 		A0E25D532314275D0025072F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A0DBFE3E2328F600008851BC /* XMGMeSquare.h */,
+				A0DBFE3F2328F600008851BC /* XMGMeSquare.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -297,6 +355,8 @@
 				A0DBFB7C23091A0000FA612E /* AppDelegate.m */,
 				A0DE9B78231119CF00CAA2E0 /* PrefixHeader.pch */,
 				A0DBFB8A23091A0100FA612E /* main.m */,
+				A0C1A90823289EB0001AD1B8 /* XMGConst.h */,
+				A0C1A90923289EB0001AD1B8 /* XMGConst.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -371,6 +431,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0DBFBA423091A0100FA612E /* Build configuration list for PBXNativeTarget "百思不得姐" */;
 			buildPhases = (
+				1B3D0CA7E76CF2E9737F7FB8 /* [CP] Check Pods Manifest.lock */,
 				A0DBFB7423091A0000FA612E /* Sources */,
 				A0DBFB7523091A0000FA612E /* Frameworks */,
 				A0DBFB7623091A0000FA612E /* Resources */,
@@ -388,6 +449,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0DBFBA723091A0100FA612E /* Build configuration list for PBXNativeTarget "百思不得姐Tests" */;
 			buildPhases = (
+				777DE8112EFEFFF1EC535BD5 /* [CP] Check Pods Manifest.lock */,
 				A0DBFB8C23091A0100FA612E /* Sources */,
 				A0DBFB8D23091A0100FA612E /* Frameworks */,
 				A0DBFB8E23091A0100FA612E /* Resources */,
@@ -406,6 +468,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0DBFBAA23091A0100FA612E /* Build configuration list for PBXNativeTarget "百思不得姐UITests" */;
 			buildPhases = (
+				76C091D74A9D9EAB531A70C2 /* [CP] Check Pods Manifest.lock */,
 				A0DBFB9723091A0100FA612E /* Sources */,
 				A0DBFB9823091A0100FA612E /* Frameworks */,
 				A0DBFB9923091A0100FA612E /* Resources */,
@@ -490,21 +553,82 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1B3D0CA7E76CF2E9737F7FB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-百思不得姐-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76C091D74A9D9EAB531A70C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-百思不得姐UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		777DE8112EFEFFF1EC535BD5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-百思不得姐Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A0DBFB7423091A0000FA612E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0D9B23623166F8000E03904 /* XMGSettingViewController.m in Sources */,
 				A0E25D3D231423100025072F /* XMGEssenceViewController.m in Sources */,
 				A0E2D39D2324C7B200330FD9 /* UITextField+XMGExtension.m in Sources */,
 				A0D9B23323166F6E00E03904 /* XMGRecommendFollowViewController.m in Sources */,
+				A0DBFE402328F600008851BC /* XMGMeSquare.m in Sources */,
 				A0D9B230231668BE00E03904 /* XMGNavigationController.m in Sources */,
 				A0DBFB8B23091A0100FA612E /* main.m in Sources */,
 				A0E25D432314233F0025072F /* XMGFollowViewController.m in Sources */,
 				A0DE9B772310E5DE00CAA2E0 /* XMGTableBarController.m in Sources */,
+				A0C1A9102328D1B2001AD1B8 /* XMGMeFooterView.m in Sources */,
 				A06C11BC23179DDE00B69123 /* XMGQuickLoginButton.m in Sources */,
 				A0EE42BC231B4451005A4B5D /* XMGLoginRegisterViewController.m in Sources */,
+				A0C1A90D23289FB0001AD1B8 /* XMGMeCell.m in Sources */,
+				A0C1A90A23289EB0001AD1B8 /* XMGConst.m in Sources */,
+				A0DBFE432328F6C2008851BC /* XMGSettingViewController.m in Sources */,
 				A0CEACC42319139800B8CF2A /* XMGLoginRegisterTextField.m in Sources */,
 				A0DEB5A523137FDD0054C29B /* UIView+UIView_XMGExtension.m in Sources */,
 				A0F21BD223128E2000339B07 /* XMGTabBar.m in Sources */,
@@ -661,6 +785,7 @@
 		};
 		A0DBFBA523091A0100FA612E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75D22A8A7AB2DAA1B0AF71D9 /* Pods-百思不得姐.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
@@ -681,6 +806,7 @@
 		};
 		A0DBFBA623091A0100FA612E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 053D199C4FC16FB08F8CE175 /* Pods-百思不得姐.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
@@ -701,6 +827,7 @@
 		};
 		A0DBFBA823091A0100FA612E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5C0285CA3A3EEB14F1FDF05 /* Pods-百思不得姐Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -720,6 +847,7 @@
 		};
 		A0DBFBA923091A0100FA612E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B15AAC2F7127B1AAD078ED48 /* Pods-百思不得姐Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -739,6 +867,7 @@
 		};
 		A0DBFBAB23091A0100FA612E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17382F0CE067B412B5CEF72B /* Pods-百思不得姐UITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X95794EHTS;
@@ -757,6 +886,7 @@
 		};
 		A0DBFBAC23091A0100FA612E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01946EE54921F652C80235A0 /* Pods-百思不得姐UITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X95794EHTS;
