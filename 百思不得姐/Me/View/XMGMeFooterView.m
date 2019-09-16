@@ -8,9 +8,18 @@
 
 #import "XMGMeFooterView.h"
 #import "XMGMeSquare.h"
+#import "XMGMeSquareButton.h"
+#import "XMGWebViewController.h"
 #import <MJExtension.h>
 #import <AFNetworking.h>
 #import <UIButton+WebCache.h>
+#import <SafariServices/SafariServices.h>
+
+
+@interface XMGMeFooterView()
+
+@end
+
 @implementation XMGMeFooterView
 
 - (instancetype)initWithFrame:(CGRect)frame{
@@ -22,9 +31,8 @@
         //请求
         AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
         [manager GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
-            XMGLog(@"这是啥 %@",downloadProgress);
+            
         } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-            XMGLog(@"请求成功 %@  %@",[responseObject class], responseObject);
             //字典数组-->模型数组
             NSArray *squares = [XMGMeSquare mj_objectArrayWithKeyValuesArray:responseObject[@"square_list"]];
             //根据模型数据创建对应的控件
@@ -48,11 +56,9 @@
     CGFloat buttonH = buttonW;
     //创建所有的方块
     for (NSUInteger i = 0; i < count - 1; i++) {
-        //i位置对应的模型数据
-        XMGMeSquare *square = squares[i];
-        
         //创建按钮
-        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        XMGMeSquareButton *button = [XMGMeSquareButton buttonWithType:UIButtonTypeCustom];
+        //一个按钮对应一个模型
         [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:button];
         //设置frame
@@ -61,18 +67,57 @@
         button.xmg_width = buttonW;
         button.xmg_height = buttonH;
         //设置数据
-        button.backgroundColor = XMGRandomColor;
-        [button setTitle:square.name forState:UIControlStateNormal];
-        [button sd_setImageWithURL:[NSURL URLWithString:square.icon] forState:UIControlStateNormal placeholderImage:[UIImage imageNamed:@"setup-head-default"]];
+        button.square = squares[i];
+
     }
-    XMGLog(@"%@", self.subviews.lastObject);
+    //计算总行数
+//    NSUInteger rowsCount = (count + maxColsCount - 1) / maxColsCount;
+//    self.xmg_height = rowsCount * buttonH;
+    
+    
     //设置footView高度 == 最后一个按钮的bottom（最大Y值）
     self.xmg_height = self.subviews.lastObject.xmg_bottom;
+  
+    //设置tableVIew的contentsize
     UITableView *tableView = (UITableView *)self.superview;
-    tableView.contentSize = CGSizeMake(0, self.xmg_bottom);
+    tableView.tableFooterView = self;
+    //重新刷新数据，重新计算contentSize
+    [tableView reloadData];
 }
 
-- (void)buttonClick:(UIButton *)button{
+- (void)buttonClick:(XMGMeSquareButton *)button{
+
+    NSString *url = button.square.url;
     
+    if ([url hasPrefix:@"http"]) {
+        //http协议
+        //使用SFSafariViewController显示网页
+//        SFSafariViewController *webView = [[SFSafariViewController alloc]initWithURL:[NSURL URLWithString:url]];
+//        UITabBarController *tabBarVC = (UITabBarController *)self.window.rootViewController;
+//        [tabBarVC presentViewController:webView animated:YES completion:nil];
+        
+    
+        //获得“我”模块对应的导航控制器
+        UITabBarController *tabBarVC = (UITabBarController *)self.window.rootViewController;
+        UINavigationController *nav = tabBarVC.selectedViewController;
+        
+        //显示XMGWebViewController
+        XMGWebViewController *webView = [[XMGWebViewController alloc]init];
+        webView.url = url;
+        webView.navigationItem.title = button.currentTitle;
+        [nav pushViewController:webView animated:YES];
+    }else if([url hasPrefix:@"mod"]){
+        //mod协议
+        if ([url hasSuffix:@"BDJ_To_Check"]) {
+            XMGLog(@"跳转到审貼界面");
+        }else if ([url hasSuffix:@"BDJ_To_RecentHot"]){
+            XMGLog(@"跳转到每日排行界面");
+        }else{
+            XMGLog(@"跳转到其他界面");
+        }
+    }else{
+        XMGLog(@"不是HTTP协议，也不是mod");
+    }
+
 }
 @end

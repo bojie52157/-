@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XMGWebViewController">
+            <connections>
+                <outlet property="backItem" destination="SQR-z6-hyS" id="SYY-NW-XWL"/>
+                <outlet property="forwardItem" destination="Fyz-6L-Z79" id="Idz-Is-bhV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="KMW-p0-ZZZ" id="D37-bg-ZaL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KMW-p0-ZZZ">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="847"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="YvG-fH-hZ8"/>
+                    </connections>
+                </webView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eTJ-Cz-2aM">
+                    <rect key="frame" x="0.0" y="847" width="414" height="49"/>
+                    <items>
+                        <barButtonItem enabled="NO" title="Item" image="back" id="SQR-z6-hyS" userLabel="back">
+                            <connections>
+                                <action selector="back" destination="-1" id="tWw-bR-07X"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem enabled="NO" title="Item" image="forward" id="Fyz-6L-Z79" userLabel="forward">
+                            <connections>
+                                <action selector="forward" destination="-1" id="BUU-Oj-gLl"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem width="259" style="plain" systemItem="fixedSpace" id="yeR-ga-6en"/>
+                        <barButtonItem systemItem="refresh" id="Rlj-LL-5Vs" userLabel="Refresh">
+                            <connections>
+                                <action selector="reload" destination="-1" id="1y3-qi-GD4"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="KMW-p0-ZZZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="5XL-5W-LUd"/>
+                <constraint firstItem="eTJ-Cz-2aM" firstAttribute="top" secondItem="KMW-p0-ZZZ" secondAttribute="bottom" id="BJM-0y-izo"/>
+                <constraint firstItem="KMW-p0-ZZZ" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="Bqe-t4-1cO"/>
+                <constraint firstItem="KMW-p0-ZZZ" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="FxK-1Y-u9F"/>
+                <constraint firstItem="eTJ-Cz-2aM" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="Hy1-1A-ogJ"/>
+                <constraint firstItem="KMW-p0-ZZZ" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="bJY-W4-e8U"/>
+                <constraint firstItem="KMW-p0-ZZZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="rYP-gO-FS6"/>
+                <constraint firstAttribute="bottom" secondItem="eTJ-Cz-2aM" secondAttribute="bottom" id="xSR-LX-Y11"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="KMW-p0-ZZZ" secondAttribute="trailing" id="xnd-aS-4Cf"/>
+                <constraint firstItem="eTJ-Cz-2aM" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="zF1-Sl-f6u"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back" width="27" height="20"/>
+        <image name="forward" width="27" height="20"/>
+    </resources>
+</document>
