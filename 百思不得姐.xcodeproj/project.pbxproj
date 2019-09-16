@@ -33,8 +33,10 @@
 		A0E25D432314233F0025072F /* XMGFollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E25D422314233F0025072F /* XMGFollowViewController.m */; };
 		A0E25D462314234D0025072F /* XMGMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E25D452314234D0025072F /* XMGMeViewController.m */; };
 		A0E2D39D2324C7B200330FD9 /* UITextField+XMGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E2D39C2324C7B200330FD9 /* UITextField+XMGExtension.m */; };
+		A0E4AE28232FD2B300055576 /* XMGClearCacheCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E4AE27232FD2B300055576 /* XMGClearCacheCell.m */; };
 		A0EBEBF8232F604500A02393 /* XMGWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EBEBF5232F604500A02393 /* XMGWebViewController.m */; };
 		A0EBEBF9232F604500A02393 /* XMGWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0EBEBF6232F604500A02393 /* XMGWebViewController.xib */; };
+		A0EBEBFC232F85EA00A02393 /* NSString+XMGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EBEBFB232F85EA00A02393 /* NSString+XMGExtension.m */; };
 		A0EE42BB231B4451005A4B5D /* XMGLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0EE42B8231B4451005A4B5D /* XMGLoginRegisterViewController.xib */; };
 		A0EE42BC231B4451005A4B5D /* XMGLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EE42BA231B4451005A4B5D /* XMGLoginRegisterViewController.m */; };
 		A0F21BD223128E2000339B07 /* XMGTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F21BD123128E2000339B07 /* XMGTabBar.m */; };
@@ -114,9 +116,13 @@
 		A0E25D452314234D0025072F /* XMGMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGMeViewController.m; sourceTree = "<group>"; };
 		A0E2D39B2324C7B200330FD9 /* UITextField+XMGExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+XMGExtension.h"; sourceTree = "<group>"; };
 		A0E2D39C2324C7B200330FD9 /* UITextField+XMGExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+XMGExtension.m"; sourceTree = "<group>"; };
+		A0E4AE26232FD2B300055576 /* XMGClearCacheCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGClearCacheCell.h; sourceTree = "<group>"; };
+		A0E4AE27232FD2B300055576 /* XMGClearCacheCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGClearCacheCell.m; sourceTree = "<group>"; };
 		A0EBEBF5232F604500A02393 /* XMGWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGWebViewController.m; sourceTree = "<group>"; };
 		A0EBEBF6232F604500A02393 /* XMGWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGWebViewController.xib; sourceTree = "<group>"; };
 		A0EBEBF7232F604500A02393 /* XMGWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGWebViewController.h; sourceTree = "<group>"; };
+		A0EBEBFA232F85EA00A02393 /* NSString+XMGExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+XMGExtension.h"; sourceTree = "<group>"; };
+		A0EBEBFB232F85EA00A02393 /* NSString+XMGExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+XMGExtension.m"; sourceTree = "<group>"; };
 		A0EE42B8231B4451005A4B5D /* XMGLoginRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGLoginRegisterViewController.xib; sourceTree = "<group>"; };
 		A0EE42B9231B4451005A4B5D /* XMGLoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGLoginRegisterViewController.h; sourceTree = "<group>"; };
 		A0EE42BA231B4451005A4B5D /* XMGLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGLoginRegisterViewController.m; sourceTree = "<group>"; };
@@ -345,6 +351,8 @@
 				A0C1A90F2328D1B2001AD1B8 /* XMGMeFooterView.m */,
 				A04B2BCE232E371500F789F0 /* XMGMeSquareButton.h */,
 				A04B2BCF232E371500F789F0 /* XMGMeSquareButton.m */,
+				A0E4AE26232FD2B300055576 /* XMGClearCacheCell.h */,
+				A0E4AE27232FD2B300055576 /* XMGClearCacheCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -406,6 +414,8 @@
 				A0D9B22C231653A700E03904 /* UIBarButtonItem+XMGExtension.m */,
 				A0E2D39B2324C7B200330FD9 /* UITextField+XMGExtension.h */,
 				A0E2D39C2324C7B200330FD9 /* UITextField+XMGExtension.m */,
+				A0EBEBFA232F85EA00A02393 /* NSString+XMGExtension.h */,
+				A0EBEBFB232F85EA00A02393 /* NSString+XMGExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -639,10 +649,12 @@
 				A0EBEBF8232F604500A02393 /* XMGWebViewController.m in Sources */,
 				A0DE9B772310E5DE00CAA2E0 /* XMGTableBarController.m in Sources */,
 				A0C1A9102328D1B2001AD1B8 /* XMGMeFooterView.m in Sources */,
+				A0E4AE28232FD2B300055576 /* XMGClearCacheCell.m in Sources */,
 				A04B2BD0232E371500F789F0 /* XMGMeSquareButton.m in Sources */,
 				A06C11BC23179DDE00B69123 /* XMGQuickLoginButton.m in Sources */,
 				A0EE42BC231B4451005A4B5D /* XMGLoginRegisterViewController.m in Sources */,
 				A0C1A90D23289FB0001AD1B8 /* XMGMeCell.m in Sources */,
+				A0EBEBFC232F85EA00A02393 /* NSString+XMGExtension.m in Sources */,
 				A0C1A90A23289EB0001AD1B8 /* XMGConst.m in Sources */,
 				A0DBFE432328F6C2008851BC /* XMGSettingViewController.m in Sources */,
 				A0CEACC42319139800B8CF2A /* XMGLoginRegisterTextField.m in Sources */,
