@@ -15,6 +15,7 @@
 		A0C1A90A23289EB0001AD1B8 /* XMGConst.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1A90923289EB0001AD1B8 /* XMGConst.m */; };
 		A0C1A90D23289FB0001AD1B8 /* XMGMeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1A90C23289FB0001AD1B8 /* XMGMeCell.m */; };
 		A0C1A9102328D1B2001AD1B8 /* XMGMeFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1A90F2328D1B2001AD1B8 /* XMGMeFooterView.m */; };
+		A0CA3ECC2330E2D300292ED4 /* XMGTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CA3ECA2330E2D300292ED4 /* XMGTitleButton.m */; };
 		A0CEACC42319139800B8CF2A /* XMGLoginRegisterTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CEACC32319139800B8CF2A /* XMGLoginRegisterTextField.m */; };
 		A0D9B22D231653A700E03904 /* UIBarButtonItem+XMGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D9B22C231653A700E03904 /* UIBarButtonItem+XMGExtension.m */; };
 		A0D9B230231668BE00E03904 /* XMGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D9B22F231668BE00E03904 /* XMGNavigationController.m */; };
@@ -34,12 +35,20 @@
 		A0E25D462314234D0025072F /* XMGMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E25D452314234D0025072F /* XMGMeViewController.m */; };
 		A0E2D39D2324C7B200330FD9 /* UITextField+XMGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E2D39C2324C7B200330FD9 /* UITextField+XMGExtension.m */; };
 		A0E4AE28232FD2B300055576 /* XMGClearCacheCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E4AE27232FD2B300055576 /* XMGClearCacheCell.m */; };
+		A0EAFAFF2330B9B200BC5F32 /* XMGSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EAFAFD2330B9B200BC5F32 /* XMGSettingCell.m */; };
 		A0EBEBF8232F604500A02393 /* XMGWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EBEBF5232F604500A02393 /* XMGWebViewController.m */; };
 		A0EBEBF9232F604500A02393 /* XMGWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0EBEBF6232F604500A02393 /* XMGWebViewController.xib */; };
 		A0EBEBFC232F85EA00A02393 /* NSString+XMGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EBEBFB232F85EA00A02393 /* NSString+XMGExtension.m */; };
 		A0EE42BB231B4451005A4B5D /* XMGLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0EE42B8231B4451005A4B5D /* XMGLoginRegisterViewController.xib */; };
 		A0EE42BC231B4451005A4B5D /* XMGLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EE42BA231B4451005A4B5D /* XMGLoginRegisterViewController.m */; };
 		A0F21BD223128E2000339B07 /* XMGTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F21BD123128E2000339B07 /* XMGTabBar.m */; };
+		A0FFD8222331CA2E0075C148 /* XMGAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FFD8212331CA2E0075C148 /* XMGAllViewController.m */; };
+		A0FFD8252331CA390075C148 /* XMGVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FFD8242331CA390075C148 /* XMGVideoViewController.m */; };
+		A0FFD8282331CA460075C148 /* XMGVoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FFD8272331CA460075C148 /* XMGVoiceViewController.m */; };
+		A0FFD82B2331CA510075C148 /* XMGPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FFD82A2331CA510075C148 /* XMGPictureViewController.m */; };
+		A0FFD82E2331CA6B0075C148 /* XMGWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FFD82D2331CA6B0075C148 /* XMGWordViewController.m */; };
+		A0FFD83123320F590075C148 /* XMGTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FFD83023320F590075C148 /* XMGTopic.m */; };
+		A0FFD834233232590075C148 /* XMGRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FFD833233232590075C148 /* XMGRefreshHeader.m */; };
 		BE5CBB5D0BE4ECC68749A92C /* libPods-百思不得姐UITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86087CE19D2DFE4BE321F0C4 /* libPods-百思不得姐UITests.a */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +86,8 @@
 		A0C1A90C23289FB0001AD1B8 /* XMGMeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGMeCell.m; sourceTree = "<group>"; };
 		A0C1A90E2328D1B2001AD1B8 /* XMGMeFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGMeFooterView.h; sourceTree = "<group>"; };
 		A0C1A90F2328D1B2001AD1B8 /* XMGMeFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGMeFooterView.m; sourceTree = "<group>"; };
+		A0CA3ECA2330E2D300292ED4 /* XMGTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGTitleButton.m; sourceTree = "<group>"; };
+		A0CA3ECB2330E2D300292ED4 /* XMGTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTitleButton.h; sourceTree = "<group>"; };
 		A0CEACC22319139800B8CF2A /* XMGLoginRegisterTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGLoginRegisterTextField.h; sourceTree = "<group>"; };
 		A0CEACC32319139800B8CF2A /* XMGLoginRegisterTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGLoginRegisterTextField.m; sourceTree = "<group>"; };
 		A0D9B22B231653A700E03904 /* UIBarButtonItem+XMGExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+XMGExtension.h"; sourceTree = "<group>"; };
@@ -118,6 +129,8 @@
 		A0E2D39C2324C7B200330FD9 /* UITextField+XMGExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+XMGExtension.m"; sourceTree = "<group>"; };
 		A0E4AE26232FD2B300055576 /* XMGClearCacheCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGClearCacheCell.h; sourceTree = "<group>"; };
 		A0E4AE27232FD2B300055576 /* XMGClearCacheCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGClearCacheCell.m; sourceTree = "<group>"; };
+		A0EAFAFD2330B9B200BC5F32 /* XMGSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGSettingCell.m; sourceTree = "<group>"; };
+		A0EAFAFE2330B9B200BC5F32 /* XMGSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGSettingCell.h; sourceTree = "<group>"; };
 		A0EBEBF5232F604500A02393 /* XMGWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGWebViewController.m; sourceTree = "<group>"; };
 		A0EBEBF6232F604500A02393 /* XMGWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGWebViewController.xib; sourceTree = "<group>"; };
 		A0EBEBF7232F604500A02393 /* XMGWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGWebViewController.h; sourceTree = "<group>"; };
@@ -128,6 +141,20 @@
 		A0EE42BA231B4451005A4B5D /* XMGLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGLoginRegisterViewController.m; sourceTree = "<group>"; };
 		A0F21BD023128E2000339B07 /* XMGTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGTabBar.h; sourceTree = "<group>"; };
 		A0F21BD123128E2000339B07 /* XMGTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGTabBar.m; sourceTree = "<group>"; };
+		A0FFD8202331CA2E0075C148 /* XMGAllViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGAllViewController.h; sourceTree = "<group>"; };
+		A0FFD8212331CA2E0075C148 /* XMGAllViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGAllViewController.m; sourceTree = "<group>"; };
+		A0FFD8232331CA390075C148 /* XMGVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGVideoViewController.h; sourceTree = "<group>"; };
+		A0FFD8242331CA390075C148 /* XMGVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGVideoViewController.m; sourceTree = "<group>"; };
+		A0FFD8262331CA460075C148 /* XMGVoiceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGVoiceViewController.h; sourceTree = "<group>"; };
+		A0FFD8272331CA460075C148 /* XMGVoiceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGVoiceViewController.m; sourceTree = "<group>"; };
+		A0FFD8292331CA510075C148 /* XMGPictureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGPictureViewController.h; sourceTree = "<group>"; };
+		A0FFD82A2331CA510075C148 /* XMGPictureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGPictureViewController.m; sourceTree = "<group>"; };
+		A0FFD82C2331CA6B0075C148 /* XMGWordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGWordViewController.h; sourceTree = "<group>"; };
+		A0FFD82D2331CA6B0075C148 /* XMGWordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGWordViewController.m; sourceTree = "<group>"; };
+		A0FFD82F23320F590075C148 /* XMGTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTopic.h; sourceTree = "<group>"; };
+		A0FFD83023320F590075C148 /* XMGTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGTopic.m; sourceTree = "<group>"; };
+		A0FFD832233232590075C148 /* XMGRefreshHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGRefreshHeader.h; sourceTree = "<group>"; };
+		A0FFD833233232590075C148 /* XMGRefreshHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGRefreshHeader.m; sourceTree = "<group>"; };
 		B15AAC2F7127B1AAD078ED48 /* Pods-百思不得姐Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐Tests/Pods-百思不得姐Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B62C7F2820CDAD27B1755B13 /* libPods-百思不得姐.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-百思不得姐.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5C0285CA3A3EEB14F1FDF05 /* Pods-百思不得姐Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐Tests/Pods-百思不得姐Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -254,6 +281,16 @@
 			children = (
 				A0E25D3B231423100025072F /* XMGEssenceViewController.h */,
 				A0E25D3C231423100025072F /* XMGEssenceViewController.m */,
+				A0FFD8202331CA2E0075C148 /* XMGAllViewController.h */,
+				A0FFD8212331CA2E0075C148 /* XMGAllViewController.m */,
+				A0FFD8232331CA390075C148 /* XMGVideoViewController.h */,
+				A0FFD8242331CA390075C148 /* XMGVideoViewController.m */,
+				A0FFD8262331CA460075C148 /* XMGVoiceViewController.h */,
+				A0FFD8272331CA460075C148 /* XMGVoiceViewController.m */,
+				A0FFD8292331CA510075C148 /* XMGPictureViewController.h */,
+				A0FFD82A2331CA510075C148 /* XMGPictureViewController.m */,
+				A0FFD82C2331CA6B0075C148 /* XMGWordViewController.h */,
+				A0FFD82D2331CA6B0075C148 /* XMGWordViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -261,6 +298,8 @@
 		A0E25D49231426CC0025072F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A0CA3ECB2330E2D300292ED4 /* XMGTitleButton.h */,
+				A0CA3ECA2330E2D300292ED4 /* XMGTitleButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -268,6 +307,8 @@
 		A0E25D4A231426D10025072F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A0FFD82F23320F590075C148 /* XMGTopic.h */,
+				A0FFD83023320F590075C148 /* XMGTopic.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -353,6 +394,8 @@
 				A04B2BCF232E371500F789F0 /* XMGMeSquareButton.m */,
 				A0E4AE26232FD2B300055576 /* XMGClearCacheCell.h */,
 				A0E4AE27232FD2B300055576 /* XMGClearCacheCell.m */,
+				A0EAFAFE2330B9B200BC5F32 /* XMGSettingCell.h */,
+				A0EAFAFD2330B9B200BC5F32 /* XMGSettingCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -416,6 +459,8 @@
 				A0E2D39C2324C7B200330FD9 /* UITextField+XMGExtension.m */,
 				A0EBEBFA232F85EA00A02393 /* NSString+XMGExtension.h */,
 				A0EBEBFB232F85EA00A02393 /* NSString+XMGExtension.m */,
+				A0FFD832233232590075C148 /* XMGRefreshHeader.h */,
+				A0FFD833233232590075C148 /* XMGRefreshHeader.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -458,6 +503,7 @@
 				A0DBFB7423091A0000FA612E /* Sources */,
 				A0DBFB7523091A0000FA612E /* Frameworks */,
 				A0DBFB7623091A0000FA612E /* Resources */,
+				E09DE1F5D3BBD1CEC15CFDB5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -632,6 +678,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E09DE1F5D3BBD1CEC15CFDB5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -640,24 +706,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0E25D3D231423100025072F /* XMGEssenceViewController.m in Sources */,
+				A0FFD8222331CA2E0075C148 /* XMGAllViewController.m in Sources */,
 				A0E2D39D2324C7B200330FD9 /* UITextField+XMGExtension.m in Sources */,
 				A0D9B23323166F6E00E03904 /* XMGRecommendFollowViewController.m in Sources */,
 				A0DBFE402328F600008851BC /* XMGMeSquare.m in Sources */,
 				A0D9B230231668BE00E03904 /* XMGNavigationController.m in Sources */,
 				A0DBFB8B23091A0100FA612E /* main.m in Sources */,
 				A0E25D432314233F0025072F /* XMGFollowViewController.m in Sources */,
+				A0FFD8252331CA390075C148 /* XMGVideoViewController.m in Sources */,
 				A0EBEBF8232F604500A02393 /* XMGWebViewController.m in Sources */,
 				A0DE9B772310E5DE00CAA2E0 /* XMGTableBarController.m in Sources */,
 				A0C1A9102328D1B2001AD1B8 /* XMGMeFooterView.m in Sources */,
 				A0E4AE28232FD2B300055576 /* XMGClearCacheCell.m in Sources */,
 				A04B2BD0232E371500F789F0 /* XMGMeSquareButton.m in Sources */,
+				A0FFD8282331CA460075C148 /* XMGVoiceViewController.m in Sources */,
+				A0FFD83123320F590075C148 /* XMGTopic.m in Sources */,
 				A06C11BC23179DDE00B69123 /* XMGQuickLoginButton.m in Sources */,
+				A0FFD834233232590075C148 /* XMGRefreshHeader.m in Sources */,
+				A0EAFAFF2330B9B200BC5F32 /* XMGSettingCell.m in Sources */,
+				A0FFD82B2331CA510075C148 /* XMGPictureViewController.m in Sources */,
 				A0EE42BC231B4451005A4B5D /* XMGLoginRegisterViewController.m in Sources */,
+				A0CA3ECC2330E2D300292ED4 /* XMGTitleButton.m in Sources */,
 				A0C1A90D23289FB0001AD1B8 /* XMGMeCell.m in Sources */,
 				A0EBEBFC232F85EA00A02393 /* NSString+XMGExtension.m in Sources */,
 				A0C1A90A23289EB0001AD1B8 /* XMGConst.m in Sources */,
 				A0DBFE432328F6C2008851BC /* XMGSettingViewController.m in Sources */,
 				A0CEACC42319139800B8CF2A /* XMGLoginRegisterTextField.m in Sources */,
+				A0FFD82E2331CA6B0075C148 /* XMGWordViewController.m in Sources */,
 				A0DEB5A523137FDD0054C29B /* UIView+UIView_XMGExtension.m in Sources */,
 				A0F21BD223128E2000339B07 /* XMGTabBar.m in Sources */,
 				A0E25D462314234D0025072F /* XMGMeViewController.m in Sources */,
