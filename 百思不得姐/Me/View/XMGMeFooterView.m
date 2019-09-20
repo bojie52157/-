@@ -10,8 +10,8 @@
 #import "XMGMeSquare.h"
 #import "XMGMeSquareButton.h"
 #import "XMGWebViewController.h"
+#import "XMGHTTPSessionManager.h"
 #import <MJExtension.h>
-#import <AFNetworking.h>
 #import <UIButton+WebCache.h>
 #import <SafariServices/SafariServices.h>
 
@@ -29,8 +29,7 @@
         params[@"a"] = @"square";
         params[@"c"] = @"topic";
         //请求
-        AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-        [manager GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
+        [[XMGHTTPSessionManager manager]GET:XMGCommonURL parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
             
         } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             //字典数组-->模型数组

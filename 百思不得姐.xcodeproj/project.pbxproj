@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		2DD135BDC23B9B7E8649D663 /* libPods-百思不得姐Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDE74FE0D6AACB45054E9C4A /* libPods-百思不得姐Tests.a */; };
 		5CEA165CBE049AE5103DC2CA /* libPods-百思不得姐.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B62C7F2820CDAD27B1755B13 /* libPods-百思不得姐.a */; };
+		A00AC7AB2334B5A300280FD3 /* NSDate+XMGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A00AC7AA2334B5A300280FD3 /* NSDate+XMGExtension.m */; };
+		A00AC7B12334B79700280FD3 /* NSCalendar+XMGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A00AC7B02334B79600280FD3 /* NSCalendar+XMGExtension.m */; };
+		A016C2BE23332947000BB0CC /* XMGRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = A016C2BC23332947000BB0CC /* XMGRefreshFooter.m */; };
+		A016C2C123335B6E000BB0CC /* XMGHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A016C2C023335B6E000BB0CC /* XMGHTTPSessionManager.m */; };
+		A016C2C4233369D4000BB0CC /* XMGTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A016C2C3233369D4000BB0CC /* XMGTopicCell.m */; };
+		A016C2C6233369DD000BB0CC /* XMGTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A016C2C5233369DD000BB0CC /* XMGTopicCell.xib */; };
 		A01762DC2316BCA500AA1B75 /* XMGFollowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A01762DB2316BCA500AA1B75 /* XMGFollowViewController.xib */; };
 		A04B2BD0232E371500F789F0 /* XMGMeSquareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A04B2BCF232E371500F789F0 /* XMGMeSquareButton.m */; };
 		A06C11BC23179DDE00B69123 /* XMGQuickLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A06C11BB23179DDE00B69123 /* XMGQuickLoginButton.m */; };
@@ -75,6 +81,17 @@
 		17382F0CE067B412B5CEF72B /* Pods-百思不得姐UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐UITests/Pods-百思不得姐UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		75D22A8A7AB2DAA1B0AF71D9 /* Pods-百思不得姐.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐.debug.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐.debug.xcconfig"; sourceTree = "<group>"; };
 		86087CE19D2DFE4BE321F0C4 /* libPods-百思不得姐UITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-百思不得姐UITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00AC7A92334B5A300280FD3 /* NSDate+XMGExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+XMGExtension.h"; sourceTree = "<group>"; };
+		A00AC7AA2334B5A300280FD3 /* NSDate+XMGExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+XMGExtension.m"; sourceTree = "<group>"; };
+		A00AC7AF2334B79600280FD3 /* NSCalendar+XMGExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+XMGExtension.h"; sourceTree = "<group>"; };
+		A00AC7B02334B79600280FD3 /* NSCalendar+XMGExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+XMGExtension.m"; sourceTree = "<group>"; };
+		A016C2BC23332947000BB0CC /* XMGRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGRefreshFooter.m; sourceTree = "<group>"; };
+		A016C2BD23332947000BB0CC /* XMGRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGRefreshFooter.h; sourceTree = "<group>"; };
+		A016C2BF23335B6E000BB0CC /* XMGHTTPSessionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGHTTPSessionManager.h; sourceTree = "<group>"; };
+		A016C2C023335B6E000BB0CC /* XMGHTTPSessionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGHTTPSessionManager.m; sourceTree = "<group>"; };
+		A016C2C2233369D4000BB0CC /* XMGTopicCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGTopicCell.h; sourceTree = "<group>"; };
+		A016C2C3233369D4000BB0CC /* XMGTopicCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGTopicCell.m; sourceTree = "<group>"; };
+		A016C2C5233369DD000BB0CC /* XMGTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGTopicCell.xib; sourceTree = "<group>"; };
 		A01762DB2316BCA500AA1B75 /* XMGFollowViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XMGFollowViewController.xib; sourceTree = "<group>"; };
 		A04B2BCE232E371500F789F0 /* XMGMeSquareButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMGMeSquareButton.h; sourceTree = "<group>"; };
 		A04B2BCF232E371500F789F0 /* XMGMeSquareButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMGMeSquareButton.m; sourceTree = "<group>"; };
@@ -300,6 +317,9 @@
 			children = (
 				A0CA3ECB2330E2D300292ED4 /* XMGTitleButton.h */,
 				A0CA3ECA2330E2D300292ED4 /* XMGTitleButton.m */,
+				A016C2C2233369D4000BB0CC /* XMGTopicCell.h */,
+				A016C2C3233369D4000BB0CC /* XMGTopicCell.m */,
+				A016C2C5233369DD000BB0CC /* XMGTopicCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -421,6 +441,8 @@
 				A0DBFB8A23091A0100FA612E /* main.m */,
 				A0C1A90823289EB0001AD1B8 /* XMGConst.h */,
 				A0C1A90923289EB0001AD1B8 /* XMGConst.m */,
+				A016C2BF23335B6E000BB0CC /* XMGHTTPSessionManager.h */,
+				A016C2C023335B6E000BB0CC /* XMGHTTPSessionManager.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -461,6 +483,12 @@
 				A0EBEBFB232F85EA00A02393 /* NSString+XMGExtension.m */,
 				A0FFD832233232590075C148 /* XMGRefreshHeader.h */,
 				A0FFD833233232590075C148 /* XMGRefreshHeader.m */,
+				A016C2BD23332947000BB0CC /* XMGRefreshFooter.h */,
+				A016C2BC23332947000BB0CC /* XMGRefreshFooter.m */,
+				A00AC7A92334B5A300280FD3 /* NSDate+XMGExtension.h */,
+				A00AC7AA2334B5A300280FD3 /* NSDate+XMGExtension.m */,
+				A00AC7AF2334B79600280FD3 /* NSCalendar+XMGExtension.h */,
+				A00AC7B02334B79600280FD3 /* NSCalendar+XMGExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -600,6 +628,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A016C2C6233369DD000BB0CC /* XMGTopicCell.xib in Resources */,
 				A01762DC2316BCA500AA1B75 /* XMGFollowViewController.xib in Resources */,
 				A0DBFB8523091A0100FA612E /* Assets.xcassets in Resources */,
 				A0EBEBF9232F604500A02393 /* XMGWebViewController.xib in Resources */,
@@ -712,6 +741,7 @@
 				A0DBFE402328F600008851BC /* XMGMeSquare.m in Sources */,
 				A0D9B230231668BE00E03904 /* XMGNavigationController.m in Sources */,
 				A0DBFB8B23091A0100FA612E /* main.m in Sources */,
+				A00AC7AB2334B5A300280FD3 /* NSDate+XMGExtension.m in Sources */,
 				A0E25D432314233F0025072F /* XMGFollowViewController.m in Sources */,
 				A0FFD8252331CA390075C148 /* XMGVideoViewController.m in Sources */,
 				A0EBEBF8232F604500A02393 /* XMGWebViewController.m in Sources */,
@@ -729,15 +759,19 @@
 				A0CA3ECC2330E2D300292ED4 /* XMGTitleButton.m in Sources */,
 				A0C1A90D23289FB0001AD1B8 /* XMGMeCell.m in Sources */,
 				A0EBEBFC232F85EA00A02393 /* NSString+XMGExtension.m in Sources */,
+				A016C2BE23332947000BB0CC /* XMGRefreshFooter.m in Sources */,
 				A0C1A90A23289EB0001AD1B8 /* XMGConst.m in Sources */,
 				A0DBFE432328F6C2008851BC /* XMGSettingViewController.m in Sources */,
 				A0CEACC42319139800B8CF2A /* XMGLoginRegisterTextField.m in Sources */,
 				A0FFD82E2331CA6B0075C148 /* XMGWordViewController.m in Sources */,
+				A00AC7B12334B79700280FD3 /* NSCalendar+XMGExtension.m in Sources */,
 				A0DEB5A523137FDD0054C29B /* UIView+UIView_XMGExtension.m in Sources */,
 				A0F21BD223128E2000339B07 /* XMGTabBar.m in Sources */,
 				A0E25D462314234D0025072F /* XMGMeViewController.m in Sources */,
 				A0E25D402314231F0025072F /* XMGNewViewController.m in Sources */,
+				A016C2C123335B6E000BB0CC /* XMGHTTPSessionManager.m in Sources */,
 				A0D9B22D231653A700E03904 /* UIBarButtonItem+XMGExtension.m in Sources */,
+				A016C2C4233369D4000BB0CC /* XMGTopicCell.m in Sources */,
 				A0DBFB7D23091A0000FA612E /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
