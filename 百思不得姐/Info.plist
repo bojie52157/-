@@ -25,6 +25,12 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>访问摄像头</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>需要为你添加图片</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>需要访问你的相册</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

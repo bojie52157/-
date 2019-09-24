@@ -21,6 +21,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, assign) CGFloat xmg_centerY;
 @property(nonatomic, assign) CGFloat xmg_right;
 @property(nonatomic, assign) CGFloat xmg_bottom;
+
++ (instancetype)viewFormXib;
+
 @end
 
 NS_ASSUME_NONNULL_END

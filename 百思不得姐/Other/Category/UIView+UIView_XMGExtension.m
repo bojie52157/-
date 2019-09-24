@@ -95,4 +95,9 @@
 {
     self.xmg_y = xmg_bottom - self.xmg_height;
 }
+
++ (instancetype)viewFormXib{
+    return [[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:self options:nil].lastObject;
+}
+
 @end

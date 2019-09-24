@@ -23,4 +23,5 @@ pod "SDWebImage"
 pod "MJExtension"
 pod "SVProgressHUD"
 pod "MJRefresh"
+pod "DACircularProgress"
 end

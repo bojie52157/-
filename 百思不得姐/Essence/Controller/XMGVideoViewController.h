@@ -6,11 +6,11 @@
 //  Copyright © 2019 小情调. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "XMGTopicViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface XMGVideoViewController : UITableViewController
+@interface XMGVideoViewController : XMGTopicViewController
 
 @end
 
