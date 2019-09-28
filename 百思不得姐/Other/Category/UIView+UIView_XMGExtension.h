@@ -24,6 +24,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (instancetype)viewFormXib;
 
+
+- (BOOL)intersectWithView:(UIView *)view;
 @end
 
 NS_ASSUME_NONNULL_END

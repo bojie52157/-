@@ -93,7 +93,8 @@
 - (void)setTopic:(XMGTopic *)topic{
     _topic = topic;
     
-    [self.profileImageView sd_setImageWithURL:[NSURL URLWithString:topic.profile_image] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
+    
+    [self.profileImageView setHeader:topic.profile_image];
     self.nameLabel.text = topic.name;
     self.createdAtLabel.text = topic.created_at;
     self.text_label.text = topic.text;
@@ -108,6 +109,9 @@
         self.topCmtView.hidden = NO;
         NSString *username = topic.top_cmt.user.username;//用户名
         NSString *content = topic.top_cmt.content;//评论内容
+        if (topic.top_cmt.voiceuri.length) {
+            content = @"[语音评论]";
+        }
         self.topCmtContentLabel.text = [NSString stringWithFormat:@"%@ : %@",username,content];
     }else{//没有最热评论
         self.topCmtView.hidden = YES;
@@ -165,7 +169,7 @@
 /**重写这个方法目的：能够拦截所有设置cell frame的操作，设置cell间距*/
 - (void)setFrame:(CGRect)frame{
     frame.size.height -= XMGMargin;
-    frame.origin.x += XMGMargin;
+    frame.origin.x = 0;
 //    frame.size.width -= 2 * XMGMargin;
     [super setFrame:frame];
 }

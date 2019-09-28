@@ -14,7 +14,9 @@
     [super prepare];
     self.stateLabel.textColor = [UIColor orangeColor];
     //刷新控件出现一半就会进入刷新状态
-    self.triggerAutomaticallyRefreshPercent = 0.5;
+//    self.triggerAutomaticallyRefreshPercent = 0.5;
+//    [self addSubview:[UIButton buttonWithType:UIButtonTypeContactAdd]];
+    [self setTitle:@"没有消息了" forState:MJRefreshStateNoMoreData];
 }
 
 @end

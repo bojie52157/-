@@ -64,6 +64,9 @@
 
     //gif
     self.gifView.hidden = !topic.is_gif;
+    if (topic.is_gif) {//是gif图片
+        [self.imageView xmg_setImage:[NSURL URLWithString:topic.large_image]];
+    }
     //查看大图
     if (topic.isBigPicture) {//超长图片
         self.seeBigButton.hidden = NO;

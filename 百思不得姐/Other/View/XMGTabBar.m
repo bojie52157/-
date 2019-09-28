@@ -59,6 +59,8 @@
         subview.frame = CGRectMake(tabBarButtonX, tabBarButtonY, buttonW, buttonH);
         //增加索引
         tabBarButtonIndex++;
+        
+        
     }
     
     /**设置发布按钮的frame**/

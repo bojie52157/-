@@ -13,7 +13,7 @@
 #import "XMGVoiceViewController.h"
 #import "XMGPictureViewController.h"
 #import "XMGWordViewController.h"
-
+#import "XMGRecommendTagViewController.h"
 @interface XMGEssenceViewController ()<UIScrollViewDelegate>
 
 /**
@@ -143,9 +143,9 @@
 - (void)titleClick:(XMGTitleButton *)titleButton
 {
     // 某个标题按钮被重复点击
-//    if (titleButton == self.selectedTitleButton) {
-//        [[NSNotificationCenter defaultCenter] postNotificationName:XMGTitleButtonDidRepeatClickNotification object:nil];
-//    }
+    if (titleButton == self.selectedTitleButton) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:XMGTitleButtonDidRepeatClickNotification object:nil];
+    }
     
     // 控制按钮状态
     self.selectedTitleButton.selected = NO;
@@ -166,8 +166,8 @@
 
 - (void)tagClick
 {
-//    XMGRecommendTagViewController *tag = [[XMGRecommendTagViewController alloc] init];
-//    [self.navigationController pushViewController:tag animated:YES];
+    XMGRecommendTagViewController *tag = [[XMGRecommendTagViewController alloc] init];
+    [self.navigationController pushViewController:tag animated:YES];
 }
 
 #pragma mark - 添加子控制器的view

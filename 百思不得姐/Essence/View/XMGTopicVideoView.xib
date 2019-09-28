@@ -22,7 +22,7 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SlG-RO-UpR">
                     <rect key="frame" x="0.0" y="0.0" width="343" height="222"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aT1-eZ-nbO">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aT1-eZ-nbO" userLabel="播放">
                     <rect key="frame" x="136" y="75.5" width="71" height="71"/>
                     <state key="normal" image="video-play">
                         <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -65,9 +65,10 @@
             <connections>
                 <outlet property="imageView" destination="SlG-RO-UpR" id="ORZ-NE-YDi"/>
                 <outlet property="playCountLabel" destination="2Mo-be-VhS" id="1ay-uI-qSm"/>
+                <outlet property="startPlay" destination="aT1-eZ-nbO" id="Ntt-hT-Mtp"/>
                 <outlet property="videoTimeLabel" destination="ulZ-pd-w1h" id="ofe-8P-74y"/>
             </connections>
-            <point key="canvasLocation" x="218.5" y="237"/>
+            <point key="canvasLocation" x="5" y="234"/>
         </view>
     </objects>
     <resources>

@@ -11,11 +11,12 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface XMGUser : NSObject
-
-/**
- 用户名
- */
+/** 用户名 */
 @property (nonatomic, copy) NSString *username;
+/** 头像 */
+@property (nonatomic, copy) NSString *profile_image;
+/** 性别 m(male) f(female) */
+@property (nonatomic, copy) NSString *sex;
 
 @end
 

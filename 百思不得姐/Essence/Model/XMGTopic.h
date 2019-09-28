@@ -23,6 +23,8 @@ typedef NS_ENUM(NSUInteger, XMGTopicType) {
 };
 @interface XMGTopic : NSObject
 
+/** id */
+@property (nonatomic, copy) NSString *ID;
 /** 用户的名字 */
 @property (nonatomic, copy) NSString *name;
 /** 用户的头像 */
@@ -65,6 +67,8 @@ typedef NS_ENUM(NSUInteger, XMGTopicType) {
 @property (nonatomic, assign) NSInteger videotime;
 /** 音频\视频的播放次数 */
 @property (nonatomic, assign) NSInteger playcount;
+/// 视频url
+@property (nonatomic, copy) NSString *videouri;
 //
 //
 /***** 额外增加的属性 - 方便开发 *****/

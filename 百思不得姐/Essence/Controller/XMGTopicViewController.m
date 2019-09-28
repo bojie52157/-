@@ -14,6 +14,7 @@
 #import "XMGRefreshHeader.h"
 #import "XMGRefreshFooter.h"
 #import "XMGTopicCell.h"
+#import "XMGCommentViewController.h"
 @interface XMGTopicViewController ()
 /**所有的帖子数据*/
 @property (nonatomic, strong)NSMutableArray<XMGTopic *> *topics;
@@ -48,6 +49,12 @@ static NSString *const XMGTopicCellID = @"topic";
     [self setupTable];
     [self loadNewTopics];
     [self setupRefresh];
+    [self setupNoti];
+}
+
+- (void)setupNoti{
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(tabBarButtonDidRepeatClick) name:XMGTabBarButtonDidRepeatClickNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(titleButtonDidRepeatClick) name:XMGTitleButtonDidRepeatClickNotification object:nil];
 }
 
 - (void)setupTable{
@@ -63,6 +70,27 @@ static NSString *const XMGTopicCellID = @"topic";
     self.tableView.mj_footer = [XMGRefreshFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreTopics)];
 }
 
+- (void)dealloc{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+#pragma mark -监听
+/// 监听tabBar按钮的重复点击
+- (void)tabBarButtonDidRepeatClick{
+    //如果当前控制器的view不在window上，就直接返回
+    if (self.view.window == nil) return;
+    //如果当前控制器的view跟window没有重叠，就直接返回
+    if (![self.view intersectWithView:self.view.window]) return;
+    //进行下拉刷新
+    [self.tableView.mj_header beginRefreshing];
+}
+
+/// 监听标题按钮重复点击
+- (void)titleButtonDidRepeatClick{
+    [self tabBarButtonDidRepeatClick];
+}
+
+
 #pragma mark - 数据加载
 - (void)loadNewTopics{
     //取消所有请求
@@ -72,19 +100,21 @@ static NSString *const XMGTopicCellID = @"topic";
     params[@"a"] = @"list";
     params[@"c"] = @"data";
     params[@"type"] = @(self.type);
+    __weak typeof(self) weakSelf = self;
+    
     //请求
     [self.manager GET:XMGCommonURL parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         //存储maxtime（方便用来加载下一页数据）
-        self.maxtime = responseObject[@"info"][@"maxtime"];
+        weakSelf.maxtime = responseObject[@"info"][@"maxtime"];
         //字典数组--》模型数组
-        self.topics = [XMGTopic mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
+        weakSelf.topics = [XMGTopic mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
         //刷新表格
-        [self.tableView reloadData];
+        [weakSelf.tableView reloadData];
         //让刷新控件结束刷新
-        [self.tableView.mj_header endRefreshing];
+        [weakSelf.tableView.mj_header endRefreshing];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         //让刷新控件结束刷新
-        [self.tableView.mj_header endRefreshing];
+        [weakSelf.tableView.mj_header endRefreshing];
         XMGLog(@"请求失败 %@",error);
     }];
 }
@@ -99,18 +129,20 @@ static NSString *const XMGTopicCellID = @"topic";
     params[@"c"] = @"data";
     params[@"maxtime"] = self.maxtime;
     params[@"type"] = @(self.type);
+    
+    __weak typeof(self) weakSelf = self;
     //请求
     [self.manager GET:XMGCommonURL parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         //字典数组--》模型数组
         NSArray<XMGTopic *> *moreTopics = [XMGTopic mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
-        [self.topics addObjectsFromArray:moreTopics];
+        [weakSelf.topics addObjectsFromArray:moreTopics];
         //刷新表格
-        [self.tableView reloadData];
+        [weakSelf.tableView reloadData];
         //让刷新控件结束刷新
-        [self.tableView.mj_header endRefreshing];
+        [weakSelf.tableView.mj_header endRefreshing];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         //让刷新控件结束刷新
-        [self.tableView.mj_header endRefreshing];
+        [weakSelf.tableView.mj_header endRefreshing];
         XMGLog(@"请求失败 %@",error);
     }];
 }
@@ -134,4 +166,9 @@ static NSString *const XMGTopicCellID = @"topic";
     return self.topics[indexPath.row].cellHeight;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    XMGCommentViewController *comment = [[XMGCommentViewController alloc]init];
+    comment.topic = self.topics[indexPath.row];
+    [self.navigationController pushViewController:comment animated:YES];
+}
 @end

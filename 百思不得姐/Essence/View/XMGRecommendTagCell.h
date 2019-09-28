@@ -8,5 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+
+@class XMGRecommendTag;
 @interface XMGRecommendTagCell : UITableViewCell
+
+@property (nonatomic, strong) XMGRecommendTag *recommendTag;
+
 @end
