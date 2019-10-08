@@ -10,12 +10,14 @@
 #import "XMGTopic.h"
 #import "XMGSeeBigViewController.h"
 #import <UIImageView+WebCache.h>
-//#import "XMGSeeBigViewController.h"
-
+#import <AVFoundation/AVFoundation.h>
 @interface XMGTopicVoiceView()
 @property (weak, nonatomic) IBOutlet UILabel *playCountLabel;
 @property (weak, nonatomic) IBOutlet UILabel *voiceTimeLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UIButton *voiceStart;
+@property (nonatomic, strong) AVPlayer *player;
+@property (nonatomic, strong) AVPlayerItem *currentItem;
 @end
 
 @implementation XMGTopicVoiceView
@@ -25,6 +27,8 @@
     self.autoresizingMask = UIViewAutoresizingNone;
     self.imageView.userInteractionEnabled = YES;
     [self.imageView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(seeBig)]];
+    [self.voiceStart addTarget:self action:@selector(startVoice) forControlEvents:UIControlEventTouchUpInside];
+    
 }
 
 - (void)seeBig
@@ -43,6 +47,16 @@
     NSInteger minute = topic.voicetime / 60;
     NSInteger second = topic.voicetime % 60;
     self.voiceTimeLabel.text = [NSString stringWithFormat:@"%02zd:%02zd",minute,second];
+}
+
+- (void)startVoice{
+    XMGLog(@"%@",self.topic.voiceuri);
+    AVURLAsset *asset = [[AVURLAsset alloc]initWithURL:[NSURL URLWithString:self.topic.voiceuri] options:nil];
+//    NSURL *url = [NSURL URLWithString:self.topic.voiceuri];
+    self.currentItem = [[AVPlayerItem alloc]initWithAsset:asset];
+    self.player = [[AVPlayer alloc]initWithPlayerItem:self.currentItem];
+    [self.player play];
+    
 }
 
 @end

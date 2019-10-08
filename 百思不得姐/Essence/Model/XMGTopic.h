@@ -69,6 +69,8 @@ typedef NS_ENUM(NSUInteger, XMGTopicType) {
 @property (nonatomic, assign) NSInteger playcount;
 /// 视频url
 @property (nonatomic, copy) NSString *videouri;
+/// 音频url
+@property (nonatomic, copy) NSString *voiceuri;
 //
 //
 /***** 额外增加的属性 - 方便开发 *****/
